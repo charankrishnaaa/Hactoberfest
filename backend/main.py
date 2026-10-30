@@ -580,6 +580,19 @@ class AskTextRequest(BaseModel):
     lang: str = "auto"
     history: List[Dict[str, Any]] = []
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "app": "Bolo API",
+        "description": "Voice-first Government Schemes Assistant for Rural India",
+        "schemes_loaded": len(schemes_data),
+        "health": "/health",
+        "schemes": "/schemes",
+        "categories": "/categories",
+        "docs": "/docs"
+    }
+
 @app.get("/health")
 def health():
     return {
