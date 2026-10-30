@@ -7,7 +7,11 @@
     "benefits_money": "Up to Rs 5,00,000 cashless health coverage per family per year on a family floater basis.",
     "age_limit": "No age limit. All family members are covered.",
     "income_limit": "Varies by state identification; generally capped at BPL / NFSA priority household thresholds (typically under Rs 1,80,000 to Rs 2,50,000 annual income).",
-    "documents": ["Aadhaar Card", "Ration Card or PM-JAY Family ID letter", "Active mobile number"],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card or PM-JAY Family ID letter",
+      "Active mobile number"
+    ],
     "application_process": "Check eligibility via beneficiary portal or visit an empanelled hospital/CSC. Complete biometric e-KYC with an Ayushman Mitra or CSC operator to generate the Ayushman Card.",
     "application_url": "https://beneficiary.nha.gov.in/",
     "source_and_verification_date": "National Health Authority (NHA) / myScheme, Verified: October 2026"
@@ -20,7 +24,10 @@
     "benefits_money": "Dedicated Rs 5,00,000 cashless health insurance cover per year per senior citizen (or shared between 70+ members in a household), over and above existing family covers.",
     "age_limit": "70 years and above.",
     "income_limit": "No income limit. Universal coverage.",
-    "documents": ["Aadhaar Card (linked to active mobile number for OTP)", "Recent photograph"],
+    "documents": [
+      "Aadhaar Card (linked to active mobile number for OTP)",
+      "Recent photograph"
+    ],
     "application_process": "Download Ayushman App or visit the beneficiary portal. Select 'Senior Citizen 70+' registration, complete Aadhaar e-KYC, take a live selfie, and download the instant e-card.",
     "application_url": "https://beneficiary.nha.gov.in/",
     "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
@@ -33,7 +40,9 @@
     "benefits_money": "50% to 90% savings on medicine costs compared to branded counterparts.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit.",
-    "documents": ["Valid doctor prescription (for prescription drugs); over-the-counter purchases require no documents."],
+    "documents": [
+      "Valid doctor prescription (for prescription drugs); over-the-counter purchases require no documents."
+    ],
     "application_process": "Direct walk-in to any Pradhan Mantri Bhartiya Janaushadhi Kendra across the country with a valid medical prescription.",
     "application_url": "http://janaushadhi.gov.in/",
     "source_and_verification_date": "Pharmaceuticals & Medical Devices Bureau of India (PMBI) / myScheme, Verified: October 2026"
@@ -46,7 +55,10 @@
     "benefits_money": "Free medical checkups, diagnostic blood/urine tests, ultrasound scans, iron-folic supplements, and specialist OB-GYN consultations.",
     "age_limit": "No age limit for pregnant women.",
     "income_limit": "No income limit.",
-    "documents": ["Mother and Child Protection (MCP) Card", "Aadhaar Card"],
+    "documents": [
+      "Mother and Child Protection (MCP) Card",
+      "Aadhaar Card"
+    ],
     "application_process": "Visit any government primary health centre, community health centre, or district hospital on the 9th day of each month.",
     "application_url": "https://pmsma.mohfw.gov.in/",
     "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
@@ -59,7 +71,10 @@
     "benefits_money": "Free vaccines protecting against 12 vaccine-preventable life-threatening illnesses.",
     "age_limit": "Children aged 0 to 5 years and pregnant women.",
     "income_limit": "No income limit. Universal free access.",
-    "documents": ["Child Immunization Card / MCP Card", "Parent Aadhaar Card (optional)"],
+    "documents": [
+      "Child Immunization Card / MCP Card",
+      "Parent Aadhaar Card (optional)"
+    ],
     "application_process": "Visit local Anganwadi centres, Urban Primary Health Centres (UPHCs), or government sub-centres during designated immunization days.",
     "application_url": "https://www.mohfw.gov.in/",
     "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
@@ -72,7 +87,12 @@
     "benefits_money": "Cash assistance ranging from Rs 1,000 to Rs 1,400 in rural areas and Rs 900 to Rs 1,000 in urban areas, credited directly via DBT.",
     "age_limit": "19 years and above (in HPS states); universal in LPS states.",
     "income_limit": "BPL cardholder verification in High Performing States; universal in Low Performing States.",
-    "documents": ["Aadhaar Card", "MCP Card", "BPL Ration Card (where applicable)", "Bank account details linked with Aadhaar"],
+    "documents": [
+      "Aadhaar Card",
+      "MCP Card",
+      "BPL Ration Card (where applicable)",
+      "Bank account details linked with Aadhaar"
+    ],
     "application_process": "Register pregnancy with the local ASHA or ANM worker at the nearest Anganwadi or PHC and deliver at an accredited facility.",
     "application_url": "https://nhm.gov.in/",
     "source_and_verification_date": "National Health Mission (NHM) / myScheme, Verified: October 2026"
@@ -82,10 +102,15 @@
     "scheme_name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
     "scheme_description": "Direct benefit transfer maternity scheme providing partial compensation for wage loss and supporting maternal and infant nutrition.",
     "eligibility": "Pregnant women and lactating mothers for the first living child, and for a second child if that child is a girl.",
-    "benefits_money": "Rs 5,00,000 in two installments for the first child; Rs 6,000 in a single installment for a second girl child.",
+    "benefits_money": "Rs 5,000 in two installments for the first child; Rs 6,000 in a single installment for a second girl child.",
     "age_limit": "19 years and above at the time of pregnancy.",
     "income_limit": "Family income below Rs 8,00,000 per annum, or holding an EWS/BPL/e-Shram card.",
-    "documents": ["Aadhaar Card of mother and husband", "MCP Card", "Bank account linked with Aadhaar", "Child birth certificate (for later installment)"],
+    "documents": [
+      "Aadhaar Card of mother and husband",
+      "MCP Card",
+      "Bank account linked with Aadhaar",
+      "Child birth certificate (for later installment)"
+    ],
     "application_process": "Apply online through the PMMVY citizen portal or submit Form 1A/1B/1C via local Anganwadi worker or ASHA.",
     "application_url": "https://pmmvy.wcd.gov.in/",
     "source_and_verification_date": "Ministry of Women and Child Development (MWCD) / myScheme, Verified: October 2026"
@@ -98,7 +123,11 @@
     "benefits_money": "Rs 500 to Rs 1,000 per month credited directly to the patient's bank account for the entire duration of treatment.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit. Universal for all notified TB patients.",
-    "documents": ["Aadhaar Card", "Bank account details linked to Aadhaar", "TB diagnostic and treatment prescription"],
+    "documents": [
+      "Aadhaar Card",
+      "Bank account details linked to Aadhaar",
+      "TB diagnostic and treatment prescription"
+    ],
     "application_process": "Patient details are uploaded to the Ni-kshay portal by the diagnosing doctor or government health worker; DBT is triggered automatically upon verification.",
     "application_url": "https://www.nikshay.in/",
     "source_and_verification_date": "Central TB Division, MoHFW / myScheme, Verified: October 2026"
@@ -111,7 +140,11 @@
     "benefits_money": "One-time financial medical assistance up to Rs 15,00,000 (and up to Rs 20,00,000 for rare diseases under the Rare Diseases policy).",
     "age_limit": "No age limit.",
     "income_limit": "Strictly limited to families living below the poverty line (BPL threshold of the respective state).",
-    "documents": ["BPL Ration Card or valid Income Certificate", "Aadhaar Card", "Medical treatment estimate and proforma signed by treating government hospital head"],
+    "documents": [
+      "BPL Ration Card or valid Income Certificate",
+      "Aadhaar Card",
+      "Medical treatment estimate and proforma signed by treating government hospital head"
+    ],
     "application_process": "Submit the standard RAN application proforma through the Medical Superintendent of the treating designated government hospital to the MoHFW.",
     "application_url": "https://mohfw.gov.in/",
     "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
@@ -124,7 +157,9 @@
     "benefits_money": "Free professional clinical counseling and psychological support. No monetary payout.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit. Universal access.",
-    "documents": ["No documents required. Completely anonymous and confidential."],
+    "documents": [
+      "No documents required. Completely anonymous and confidential."
+    ],
     "application_process": "Dial the toll-free helpline number 14416 or 1800-891-4416 from any telephone or mobile network in India.",
     "application_url": "https://telemanas.mohfw.gov.in/",
     "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
@@ -137,7 +172,11 @@
     "benefits_money": "Zero minimum balance account, free RuPay debit card, Rs 2,00,000 accidental insurance coverage, and overdraft facility up to Rs 10,000.",
     "age_limit": "10 years and above (overdraft facility available for ages 18 to 65).",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "PAN card or Form 60", "Passport-size photographs"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN card or Form 60",
+      "Passport-size photographs"
+    ],
     "application_process": "Visit any public or private commercial bank branch, Regional Rural Bank (RRB), or Bank Mitra kiosk and fill out the PMJDY account opening form.",
     "application_url": "https://pmjdy.gov.in/",
     "source_and_verification_date": "Department of Financial Services (DFS), MoF / myScheme, Verified: October 2026"
@@ -150,7 +189,11 @@
     "benefits_money": "Rs 2,00,000 for accidental death or total permanent disability; Rs 1,00,000 for permanent partial disability. Annual premium: Rs 20.",
     "age_limit": "18 to 70 years.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Active Bank / Post Office Savings Account passbook", "Auto-debit consent mandate form"],
+    "documents": [
+      "Aadhaar Card",
+      "Active Bank / Post Office Savings Account passbook",
+      "Auto-debit consent mandate form"
+    ],
     "application_process": "Opt-in through net banking, mobile banking app, or submit an enrollment form at your home bank branch or post office.",
     "application_url": "https://financialservices.gov.in/insurance-divisions/Government-Sponsored-Socially-Oriented-Insurance-Schemes/Pradhan-Mantri-Suraksha-Bima-Yojana(PMSBY)",
     "source_and_verification_date": "Department of Financial Services (DFS), MoF / myScheme, Verified: October 2026"
@@ -163,7 +206,11 @@
     "benefits_money": "Rs 2,00,000 life insurance sum assured payable to the nominee upon death of the subscriber due to any cause. Annual premium: Rs 436.",
     "age_limit": "18 to 50 years (coverage up to age 55 provided premium is paid continuously).",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Active Bank / Post Office Savings Account details", "Nominee details and auto-debit mandate"],
+    "documents": [
+      "Aadhaar Card",
+      "Active Bank / Post Office Savings Account details",
+      "Nominee details and auto-debit mandate"
+    ],
     "application_process": "Apply via internet banking or fill and submit the PMJJBY enrollment form at your local bank branch or India Post Payments Bank branch.",
     "application_url": "https://financialservices.gov.in/insurance-divisions/Government-Sponsored-Socially-Oriented-Insurance-Schemes/Pradhan-Mantri-Jeevan-Jyoti-Bima-Yojana(PMJJBY)",
     "source_and_verification_date": "Department of Financial Services (DFS), MoF / myScheme, Verified: October 2026"
@@ -173,10 +220,14 @@
     "scheme_name": "Atal Pension Yojana (APY)",
     "scheme_description": "Government-administered guaranteed voluntary pension scheme designed to provide social and old-age security to workers in the unorganized sector.",
     "eligibility": "All Indian citizens having a bank account who are not existing income taxpayers and are not covered under statutory social security schemes.",
-    "benefits_money": "Guaranteed minimum monthly pension of Rs 1,00,000, Rs 2,00,000, Rs 3,00,000, Rs 4,00,000, or Rs 5,00,000 from age 60 until death, followed by spouse pension and corpus return to nominee.",
+    "benefits_money": "Guaranteed minimum monthly pension of Rs 1,000, Rs 2,000, Rs 3,000, Rs 4,000, or Rs 5,000 from age 60 until death, followed by spouse pension and corpus return to nominee.",
     "age_limit": "18 to 40 years.",
     "income_limit": "Subscribers must not be income tax payers.",
-    "documents": ["Aadhaar Card", "Active savings bank account passbook", "Nominee Aadhaar and relationship proof"],
+    "documents": [
+      "Aadhaar Card",
+      "Active savings bank account passbook",
+      "Nominee Aadhaar and relationship proof"
+    ],
     "application_process": "Submit the APY application form at your bank branch or register via net banking/mobile banking by authorizing auto-debit contributions.",
     "application_url": "https://www.npscra.nsdl.co.in/scheme-details.php",
     "source_and_verification_date": "Pension Fund Regulatory and Development Authority (PFRDA) / myScheme, Verified: October 2026"
@@ -189,7 +240,12 @@
     "benefits_money": "Rs 200 to Rs 500 per month central assistance (frequently supplemented by state governments up to Rs 1,000 - Rs 3,000 per month).",
     "age_limit": "60 years and above.",
     "income_limit": "Must be below the official poverty line (BPL).",
-    "documents": ["BPL Ration Card", "Aadhaar Card", "Age verification proof (Voter ID/Birth certificate)", "Bank passbook"],
+    "documents": [
+      "BPL Ration Card",
+      "Aadhaar Card",
+      "Age verification proof (Voter ID/Birth certificate)",
+      "Bank passbook"
+    ],
     "application_process": "Submit the National Social Assistance Programme (NSAP) application form to the local Block Development Office (BDO), Municipal office, or apply via the NSAP portal.",
     "application_url": "https://nsap.nic.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -202,7 +258,12 @@
     "benefits_money": "Rs 300 to Rs 500 per month central share (often topped up by states to Rs 1,500 - Rs 2,500 per month).",
     "age_limit": "40 to 79 years (transitions to IGNOAPS at age 80).",
     "income_limit": "Must belong to a certified BPL household.",
-    "documents": ["Husband's Death Certificate", "BPL Certificate / Ration card", "Aadhaar Card", "Bank passbook"],
+    "documents": [
+      "Husband's Death Certificate",
+      "BPL Certificate / Ration card",
+      "Aadhaar Card",
+      "Bank passbook"
+    ],
     "application_process": "Submit the filled application with death certificate and BPL card to the local Panchayat office, Municipal corporation, or online on the NSAP portal.",
     "application_url": "https://nsap.nic.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -215,7 +276,12 @@
     "benefits_money": "Rs 300 to Rs 500 per month central share (augmented significantly by state-level top-up schemes).",
     "age_limit": "18 to 79 years.",
     "income_limit": "Must belong to a verified BPL family.",
-    "documents": ["Disability Certificate (minimum 80% disability) or UDID Card", "BPL Certificate", "Aadhaar Card", "Bank passbook"],
+    "documents": [
+      "Disability Certificate (minimum 80% disability) or UDID Card",
+      "BPL Certificate",
+      "Aadhaar Card",
+      "Bank passbook"
+    ],
     "application_process": "Apply through the district Social Welfare Officer, Block Development Officer, or register on the central NSAP portal.",
     "application_url": "https://nsap.nic.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -228,7 +294,11 @@
     "benefits_money": "High sovereign interest rate (typically 8.2%+ p.a.), compounding annually with full triple tax exemption (EEE status under Section 80C).",
     "age_limit": "From birth up to 10 years of age of the girl child.",
     "income_limit": "No income limit. Minimum annual deposit Rs 250, maximum Rs 1,50,000 per financial year.",
-    "documents": ["Birth Certificate of the girl child", "Aadhaar and PAN of parent/guardian", "Photograph and address proof"],
+    "documents": [
+      "Birth Certificate of the girl child",
+      "Aadhaar and PAN of parent/guardian",
+      "Photograph and address proof"
+    ],
     "application_process": "Fill the SSY account opening form and submit initial deposit at any authorized public/private commercial bank or post office branch.",
     "application_url": "https://www.indiapost.gov.in/",
     "source_and_verification_date": "National Savings Institute / Department of Economic Affairs, MoF, Verified: October 2026"
@@ -241,7 +311,12 @@
     "benefits_money": "Guaranteed quarterly sovereign interest rate, loan/partial withdrawal facilities, and complete tax exemption on investment, interest, and maturity.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit. Minimum deposit Rs 500, maximum Rs 1,50,000 per financial year.",
-    "documents": ["Aadhaar Card", "PAN Card", "Passport-size photograph", "Bank account verification"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Passport-size photograph",
+      "Bank account verification"
+    ],
     "application_process": "Open instantly online through your bank's net banking portal or visit any designated post office or bank branch with KYC documents.",
     "application_url": "https://www.nsiindia.gov.in/",
     "source_and_verification_date": "Department of Economic Affairs, Ministry of Finance / myScheme, Verified: October 2026"
@@ -254,7 +329,12 @@
     "benefits_money": "Guaranteed quarterly interest payouts; maximum investment ceiling up to Rs 30,00,000 with 80C tax deduction.",
     "age_limit": "60 years and above (55 years for voluntary retirees).",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "PAN Card", "Age proof", "Retirement proof / employer superannuation certificate (for individuals below 60)"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Age proof",
+      "Retirement proof / employer superannuation certificate (for individuals below 60)"
+    ],
     "application_process": "Submit Form-1 at any post office or authorized commercial bank along with initial investment cheque and identity proofs.",
     "application_url": "https://www.indiapost.gov.in/",
     "source_and_verification_date": "Ministry of Finance / myScheme, Verified: October 2026"
@@ -267,7 +347,12 @@
     "benefits_money": "Direct financial assistance or interest subsidy of up to Rs 1,50,000 to Rs 2,67,000 depending on category and component.",
     "age_limit": "Adult head of household (18+ years).",
     "income_limit": "EWS: Up to Rs 3,00,000 p.a.; LIG: Rs 3,00,001 to Rs 6,00,000 p.a.; MIG: Up to Rs 9,00,000 p.a.",
-    "documents": ["Aadhaar Card", "Income Certificate / Salary slips", "Affidavit declaring no pucca house owned", "Land documents / title deeds (for self-construction)"],
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate / Salary slips",
+      "Affidavit declaring no pucca house owned",
+      "Land documents / title deeds (for self-construction)"
+    ],
     "application_process": "Apply online through the PMAY-Urban portal, CSC centre, or through the respective urban local body (Municipality).",
     "application_url": "https://pmay-urban.gov.in/",
     "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA) / myScheme, Verified: October 2026"
@@ -280,7 +365,12 @@
     "benefits_money": "Financial assistance of Rs 1,20,000 in plain areas and Rs 1,30,000 in hilly/difficult/northeastern states, plus MGNREGA labor wages and toilet subsidy.",
     "age_limit": "18 years and above (household head).",
     "income_limit": "Identified automatically via rural poverty deprivation criteria (typically annual income below Rs 1,20,000).",
-    "documents": ["Aadhaar Card", "MGNREGA Job Card number", "Bank account linked with Aadhaar", "Land possession certificate"],
+    "documents": [
+      "Aadhaar Card",
+      "MGNREGA Job Card number",
+      "Bank account linked with Aadhaar",
+      "Land possession certificate"
+    ],
     "application_process": "Selection is handled by the Gram Sabha based on the Awas+ database. Beneficiaries are registered by the Gram Panchayat or Block Development Office.",
     "application_url": "https://pmayg.nic.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -293,7 +383,11 @@
     "benefits_money": "Free LPG connection with zero deposit fee, free first LPG refill cylinder, free cooking stove, and per-cylinder targeted subsidy.",
     "age_limit": "Women aged 18 years and above.",
     "income_limit": "Must belong to an economically vulnerable household lacking an active LPG connection.",
-    "documents": ["Aadhaar Card of the applicant and adult family members", "Ration Card or self-declaration of family composition", "Bank Passbook"],
+    "documents": [
+      "Aadhaar Card of the applicant and adult family members",
+      "Ration Card or self-declaration of family composition",
+      "Bank Passbook"
+    ],
     "application_process": "Apply online on the PMUY portal or submit an application form at the nearest LPG distributor (Indane, Bharatgas, or HP Gas).",
     "application_url": "https://www.pmuy.gov.in/",
     "source_and_verification_date": "Ministry of Petroleum and Natural Gas (MoPNG) / myScheme, Verified: October 2026"
@@ -306,7 +400,12 @@
     "benefits_money": "Capital subsidy of Rs 30,000 for 1 kW, Rs 60,000 for 2 kW, and up to Rs 78,000 for 3 kW and above solar rooftop systems.",
     "age_limit": "18 years and above (electricity consumer account holder).",
     "income_limit": "No income limit.",
-    "documents": ["Electricity consumer bill (latest)", "Aadhaar Card", "Bank account details linked to Aadhaar", "Proof of roof ownership / NOC"],
+    "documents": [
+      "Electricity consumer bill (latest)",
+      "Aadhaar Card",
+      "Bank account details linked to Aadhaar",
+      "Proof of roof ownership / NOC"
+    ],
     "application_process": "Register on the National Rooftop Solar Portal, enter electricity consumer number, select a registered vendor, get DISCOM feasibility approval, and receive DBT upon installation.",
     "application_url": "https://pmsuryaghar.gov.in/",
     "source_and_verification_date": "Ministry of New and Renewable Energy (MNRE) / myScheme, Verified: October 2026"
@@ -319,7 +418,9 @@
     "benefits_money": "Free provision of piped potable drinking water connection supplying at least 55 litres per capita per day. No monetary grant.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit. Universal rural coverage.",
-    "documents": ["Aadhaar Card (for local village consumer registry)"],
+    "documents": [
+      "Aadhaar Card (for local village consumer registry)"
+    ],
     "application_process": "Community-driven planning executed through the Village Water and Sanitation Committee (VWSC) / Gram Panchayat.",
     "application_url": "https://jaljeevanmission.gov.in/",
     "source_and_verification_date": "Department of Drinking Water and Sanitation, Ministry of Jal Shakti, Verified: October 2026"
@@ -332,7 +433,12 @@
     "benefits_money": "Financial incentive grant of Rs 12,000 directly transferred to build an individual sanitary household latrine.",
     "age_limit": "18 years and above (head of household).",
     "income_limit": "BPL households or vulnerable APL categories.",
-    "documents": ["Aadhaar Card", "Bank Passbook", "Ration Card", "Photograph of the beneficiary with the newly constructed toilet"],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Passbook",
+      "Ration Card",
+      "Photograph of the beneficiary with the newly constructed toilet"
+    ],
     "application_process": "Apply online on the SBM-Gramin portal or submit an IHHL request through the local Gram Panchayat Secretary.",
     "application_url": "https://sbm.gov.in/sbmgramin/",
     "source_and_verification_date": "Ministry of Jal Shakti / myScheme, Verified: October 2026"
@@ -345,7 +451,11 @@
     "benefits_money": "Financial subsidy of Rs 4,000 to Rs 8,000 (supplemented by state grants) to construct an individual household sanitary toilet.",
     "age_limit": "18 years and above.",
     "income_limit": "Low-income urban households and slum residents.",
-    "documents": ["Aadhaar Card", "Bank passbook", "Urban resident proof / municipal property tax receipt"],
+    "documents": [
+      "Aadhaar Card",
+      "Bank passbook",
+      "Urban resident proof / municipal property tax receipt"
+    ],
     "application_process": "Apply online on the SBM-Urban portal or apply directly at the Ward office of your Urban Local Body (ULB).",
     "application_url": "https://swachhbharaturban.gov.in/",
     "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA) / myScheme, Verified: October 2026"
@@ -358,7 +468,11 @@
     "benefits_money": "Collateral-free working capital loan: 1st tranche Rs 10,000; 2nd tranche Rs 20,000; 3rd tranche Rs 50,000 with a 7% interest subsidy and digital cashback up to Rs 1,200/year.",
     "age_limit": "18 years and above.",
     "income_limit": "No specific income limit; verified street vending profession.",
-    "documents": ["Aadhaar Card", "Vending Certificate / Letter of Recommendation (LoR) from Municipality", "Bank passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Vending Certificate / Letter of Recommendation (LoR) from Municipality",
+      "Bank passbook"
+    ],
     "application_process": "Apply online via the PM SVANidhi portal, through local municipal offices, or through banking correspondents and CSCs.",
     "application_url": "https://pmsvanidhi.mohua.gov.in/",
     "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA) / myScheme, Verified: October 2026"
@@ -371,7 +485,9 @@
     "benefits_money": "Free digital storage, legal equivalence to original physical documents under IT Act, and zero fees for fetching certificates.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card (linked with mobile number)"],
+    "documents": [
+      "Aadhaar Card (linked with mobile number)"
+    ],
     "application_process": "Download the DigiLocker App or sign up on the DigiLocker portal using your mobile number and Aadhaar e-KYC.",
     "application_url": "https://www.digilocker.gov.in/",
     "source_and_verification_date": "Ministry of Electronics and Information Technology (MeitY), Verified: October 2026"
@@ -384,7 +500,11 @@
     "benefits_money": "Free electricity connection, service wire, energy meter, and LED pack; nominal connection fee of Rs 500 (in 10 installments) for non-poor households.",
     "age_limit": "18 years and above (household head).",
     "income_limit": "Free for BPL/SECC households; paid in installments for others.",
-    "documents": ["Aadhaar Card", "Voter ID / Address proof", "BPL Ration Card (if applicable)"],
+    "documents": [
+      "Aadhaar Card",
+      "Voter ID / Address proof",
+      "BPL Ration Card (if applicable)"
+    ],
     "application_process": "Electrification camps organized directly by DISCOMs in villages or apply at the local electricity distribution sub-station.",
     "application_url": "https://saubhagya.gov.in/",
     "source_and_verification_date": "Ministry of Power / myScheme, Verified: October 2026"
@@ -397,7 +517,11 @@
     "benefits_money": "Rs 6,000 per year transferred directly to bank accounts in three equal 4-monthly installments of Rs 2,000.",
     "age_limit": "18 years and above.",
     "income_limit": "Excludes individuals who paid income tax in the last assessment year or receive superannuation/pension over Rs 10,000/month.",
-    "documents": ["Aadhaar Card", "Land ownership records (RoR / Khata / Khasra)", "Aadhaar-linked active bank account"],
+    "documents": [
+      "Aadhaar Card",
+      "Land ownership records (RoR / Khata / Khasra)",
+      "Aadhaar-linked active bank account"
+    ],
     "application_process": "Self-register on the PM-KISAN portal under 'Farmers Corner' or visit the nearest CSC / local revenue agriculture officer.",
     "application_url": "https://pmkisan.gov.in/",
     "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
@@ -410,7 +534,12 @@
     "benefits_money": "Full sum insured payout against crop loss; low farmer premium: 2% for Kharif, 1.5% for Rabi food/oilseed crops, and 5% for commercial/horticultural crops.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Land record (Khasra/Khatauni) / Tenant agreement", "Sowing Certificate issued by Patwari/revenue official", "Bank passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Land record (Khasra/Khatauni) / Tenant agreement",
+      "Sowing Certificate issued by Patwari/revenue official",
+      "Bank passbook"
+    ],
     "application_process": "Apply online on the National Crop Insurance Portal, via the Crop Insurance App, through bank branches, or at CSC centres before the cut-off date.",
     "application_url": "https://pmfby.gov.in/",
     "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
@@ -423,7 +552,12 @@
     "benefits_money": "Revolving credit limit up to Rs 3,00,000 at a low effective interest rate of 4% per annum (with 3% prompt repayment incentive). Up to Rs 1.6 lakh collateral-free.",
     "age_limit": "18 to 75 years (co-borrower mandatory for applicants above 60).",
     "income_limit": "No income limit; credit limit determined by scale of finance, cropped area, and cropping pattern.",
-    "documents": ["Aadhaar Card", "PAN Card", "Land revenue records / lease agreement", "No-dues certificate from nearby financial institutions"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Land revenue records / lease agreement",
+      "No-dues certificate from nearby financial institutions"
+    ],
     "application_process": "Submit the standard one-page KCC application form at your local commercial, cooperative, or Regional Rural Bank branch.",
     "application_url": "https://www.myscheme.gov.in/schemes/kcc",
     "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
@@ -436,7 +570,10 @@
     "benefits_money": "Free physical and digital report containing soil fertility status across 12 parameters and dosage recommendations. No direct monetary payment.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit.",
-    "documents": ["Land revenue identity / Khasra number", "Aadhaar Card"],
+    "documents": [
+      "Land revenue identity / Khasra number",
+      "Aadhaar Card"
+    ],
     "application_process": "State Agriculture Department officials collect soil samples directly from farm plots; cards are generated and distributed every 2 years.",
     "application_url": "https://soilhealth.dac.gov.in/",
     "source_and_verification_date": "Department of Agriculture and Farmers Welfare / myScheme, Verified: October 2026"
@@ -449,7 +586,12 @@
     "benefits_money": "Capital subsidy of up to 55% for small/marginal farmers and up to 45% for other farmers on micro-irrigation equipment costs.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Land record (7/12, Khasra/Khatauni)", "Electricity connection details / water source proof", "Bank passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Land record (7/12, Khasra/Khatauni)",
+      "Electricity connection details / water source proof",
+      "Bank passbook"
+    ],
     "application_process": "Apply through the State Horticulture or Agriculture Department portal or visit the district agriculture office.",
     "application_url": "https://pmksy.gov.in/",
     "source_and_verification_date": "Department of Agriculture and Farmers Welfare / myScheme, Verified: October 2026"
@@ -462,7 +604,11 @@
     "benefits_money": "Transparent competitive online bidding, elimination of middleman commissions, and direct online payment settlement into bank accounts.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Bank passbook", "APMC gate entry receipt / Mandi license (for traders)"],
+    "documents": [
+      "Aadhaar Card",
+      "Bank passbook",
+      "APMC gate entry receipt / Mandi license (for traders)"
+    ],
     "application_process": "Register online on the e-NAM portal or approach the registration kiosk at any integrated APMC mandi with land and bank details.",
     "application_url": "https://www.enam.gov.in/",
     "source_and_verification_date": "Small Farmers' Agri-Business Consortium (SFAC) / myScheme, Verified: October 2026"
@@ -475,7 +621,12 @@
     "benefits_money": "Rs 50,000 per hectare financial assistance over 3 years, of which Rs 31,000 is given directly to the farmer for organic inputs.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Land revenue records", "Bank Passbook", "Cluster membership certificate"],
+    "documents": [
+      "Aadhaar Card",
+      "Land revenue records",
+      "Bank Passbook",
+      "Cluster membership certificate"
+    ],
     "application_process": "Form a cluster with neighboring farmers and apply through the Regional Council or District Agriculture Officer.",
     "application_url": "https://pgsindia-ncof.gov.in/pkvy/index.aspx",
     "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
@@ -488,7 +639,12 @@
     "benefits_money": "40% to 50% subsidy on procurement cost of agricultural equipment (tractors, power tillers, rotavators) or up to Rs 10 lakh for setting up CHCs.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit; higher subsidy preference for SC, ST, women, and small/marginal landholders.",
-    "documents": ["Aadhaar Card", "Land ownership proof (Khatauni)", "Caste certificate (for SC/ST benefit)", "Bank passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Land ownership proof (Khatauni)",
+      "Caste certificate (for SC/ST benefit)",
+      "Bank passbook"
+    ],
     "application_process": "Register on the centralized Direct Benefit Transfer in Agriculture Mechanization portal and select preferred machinery and dealer.",
     "application_url": "https://agrimachinery.nic.in/",
     "source_and_verification_date": "Department of Agriculture and Farmers Welfare / myScheme, Verified: October 2026"
@@ -501,7 +657,12 @@
     "benefits_money": "Government financial assistance of 40% of project cost for General category and up to 60% for SC, ST, and women beneficiaries.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Land or water body lease/ownership deed", "Detailed Project Report (DPR)", "Bank account statement"],
+    "documents": [
+      "Aadhaar Card",
+      "Land or water body lease/ownership deed",
+      "Detailed Project Report (DPR)",
+      "Bank account statement"
+    ],
     "application_process": "Submit project proposal on the PMMSY portal or through the District Fisheries Officer (DFO).",
     "application_url": "https://pmmsy.dof.gov.in/",
     "source_and_verification_date": "Department of Fisheries, Ministry of Fisheries, Animal Husbandry and Dairying, Verified: October 2026"
@@ -514,7 +675,13 @@
     "benefits_money": "50% capital subsidy up to Rs 25,00,000 for poultry projects and up to Rs 50,00,000 for sheep, goat, and pig breeding farms.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit; must demonstrate equity contribution or bank loan sanction.",
-    "documents": ["Aadhaar Card", "PAN Card", "Detailed Project Report (DPR)", "Land ownership/lease documents for farm site", "Bank sanction letter"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Detailed Project Report (DPR)",
+      "Land ownership/lease documents for farm site",
+      "Bank sanction letter"
+    ],
     "application_process": "Apply online through the NLM entrepreneurship portal; proposals are appraised by State Level Executive Committees and funding routed through SIDBI.",
     "application_url": "https://nlm.udyamimitra.in/",
     "source_and_verification_date": "Department of Animal Husbandry and Dairying / myScheme, Verified: October 2026"
@@ -527,7 +694,13 @@
     "benefits_money": "3% annual interest subvention on bank loans up to Rs 2,00,000,000 (2 crore) for a maximum of 7 years, along with CGTMSE credit guarantee fee coverage.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Detailed Project Report (DPR)", "Aadhaar Card", "PAN Card", "Land ownership/lease records", "Registration certificate (for FPOs/firms)"],
+    "documents": [
+      "Detailed Project Report (DPR)",
+      "Aadhaar Card",
+      "PAN Card",
+      "Land ownership/lease records",
+      "Registration certificate (for FPOs/firms)"
+    ],
     "application_process": "Register and submit the project application online on the AIF portal. Once cleared by the Ministry, it is forwarded directly to the chosen bank for loan sanction.",
     "application_url": "https://agriinfra.dac.gov.in/",
     "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
@@ -540,7 +713,9 @@
     "benefits_money": "Community asset creation; no direct beneficiary cash payouts. Provides local wage employment under MGNREGA convergence.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit.",
-    "documents": ["Gram Panchayat resolution / site identification survey"],
+    "documents": [
+      "Gram Panchayat resolution / site identification survey"
+    ],
     "application_process": "Execution implemented by District Administration and Gram Panchayats through convergence of MGNREGA, XV Finance Commission grants, and CSR.",
     "application_url": "https://water.ncog.gov.in/amrit_sarovar/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -553,7 +728,9 @@
     "benefits_money": "Free cooked meal meeting standardized nutritional quotas (minimum 450 calories and 12g protein for primary; 700 calories and 20g protein for upper primary). No direct cash.",
     "age_limit": "6 to 14 years.",
     "income_limit": "No income limit. Universal for all enrolled students.",
-    "documents": ["School enrollment records"],
+    "documents": [
+      "School enrollment records"
+    ],
     "application_process": "Automatic entitlement upon enrolling in any eligible government or government-aided school.",
     "application_url": "https://pmposhan.education.gov.in/",
     "source_and_verification_date": "Department of School Education and Literacy, Ministry of Education, Verified: October 2026"
@@ -566,7 +743,10 @@
     "benefits_money": "Free textbooks, free uniforms (up to Rs 600/year), transport allowance, and special education allowances for children with special needs (CWSN).",
     "age_limit": "4 to 18 years.",
     "income_limit": "No income limit.",
-    "documents": ["School admission form", "Aadhaar Card of student/parent"],
+    "documents": [
+      "School admission form",
+      "Aadhaar Card of student/parent"
+    ],
     "application_process": "Benefits are delivered through the government school where the student is enrolled.",
     "application_url": "https://samagra.education.gov.in/",
     "source_and_verification_date": "Ministry of Education / myScheme, Verified: October 2026"
@@ -579,7 +759,13 @@
     "benefits_money": "Rs 12,000 per annum (Rs 1,000 per month) disbursed directly via DBT from class 9 through class 12.",
     "age_limit": "Typically 12 to 16 years (during secondary schooling).",
     "income_limit": "Parents' total annual income from all sources must not exceed Rs 3,50,000.",
-    "documents": ["Aadhaar Card", "Class 7/8 mark sheets", "Parental Income Certificate", "Caste Certificate (if applicable)", "Bank Passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Class 7/8 mark sheets",
+      "Parental Income Certificate",
+      "Caste Certificate (if applicable)",
+      "Bank Passbook"
+    ],
     "application_process": "Apply through the National Scholarship Portal (NSP) after qualifying in the state-level NMMSS examination.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "Department of School Education and Literacy, MoE / myScheme, Verified: October 2026"
@@ -592,7 +778,14 @@
     "benefits_money": "Complete reimbursement of non-refundable compulsory tuition fees plus monthly academic maintenance allowance (up to Rs 13,500/year).",
     "age_limit": "No age limit.",
     "income_limit": "Total family annual income must not exceed Rs 2,50,000.",
-    "documents": ["Caste Certificate", "Income Certificate", "Aadhaar Card", "Previous year academic mark sheets", "College fee receipt", "Bank passbook"],
+    "documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Previous year academic mark sheets",
+      "College fee receipt",
+      "Bank passbook"
+    ],
     "application_process": "Apply online through the National Scholarship Portal (NSP) or respective State Scholarship Portals, verified by the educational institution.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
@@ -605,7 +798,13 @@
     "benefits_money": "Rs 3,500 to Rs 7,000 per annum academic allowance plus book grants credited directly via DBT.",
     "age_limit": "13 to 17 years.",
     "income_limit": "Annual family income must not exceed Rs 2,50,000 (no income ceiling for children of manual scavengers/cleaners).",
-    "documents": ["Aadhaar Card", "Caste certificate or parent's occupation certificate", "Income certificate", "Bank passbook", "School identity card"],
+    "documents": [
+      "Aadhaar Card",
+      "Caste certificate or parent's occupation certificate",
+      "Income certificate",
+      "Bank passbook",
+      "School identity card"
+    ],
     "application_process": "Apply via the National Scholarship Portal (NSP) or State Welfare Department portal with verification by school authorities.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
@@ -618,7 +817,13 @@
     "benefits_money": "Rs 12,000 per annum for the first 3 years of graduation; Rs 20,000 per annum during postgraduate studies.",
     "age_limit": "18 to 25 years.",
     "income_limit": "Gross parental annual income must not exceed Rs 4,50,000.",
-    "documents": ["Class 12 Marksheet", "Income Certificate", "Aadhaar Card", "Admission fee receipt of college", "Bank Passbook"],
+    "documents": [
+      "Class 12 Marksheet",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Admission fee receipt of college",
+      "Bank Passbook"
+    ],
     "application_process": "Register and submit application on the National Scholarship Portal (NSP); verified by college and State Nodal Officer.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "Department of Higher Education, Ministry of Education, Verified: October 2026"
@@ -631,7 +836,13 @@
     "benefits_money": "Collateral-free loan covering full tuition and course-related expenses, plus a 3% interest subvention during moratorium for family income up to Rs 8 lakh.",
     "age_limit": "No upper age limit.",
     "income_limit": "Full interest subvention requires family income up to Rs 4.5 lakh; 3% interest subvention requires family income up to Rs 8,00,000.",
-    "documents": ["Admission letter from qualifying NIRF institution", "Aadhaar Card", "PAN Card", "Income certificate", "Class 10/12 mark sheets"],
+    "documents": [
+      "Admission letter from qualifying NIRF institution",
+      "Aadhaar Card",
+      "PAN Card",
+      "Income certificate",
+      "Class 10/12 mark sheets"
+    ],
     "application_process": "Apply directly on the unified PM-Vidyalaxmi digital portal; digital loan sanctions are handled with automated interest subsidies.",
     "application_url": "https://www.pmvidyalaxmi.doshe.gov.in/",
     "source_and_verification_date": "Department of Higher Education, Ministry of Education, Verified: October 2026"
@@ -644,7 +855,13 @@
     "benefits_money": "Rs 50,000 per year for every year of study towards college fees, computer purchase, books, and stationeries.",
     "age_limit": "No age limit.",
     "income_limit": "Family annual income from all sources must not exceed Rs 8,00,000.",
-    "documents": ["AICTE admission allotment letter", "Tuition fee receipts", "Income certificate", "Aadhaar Card", "Class 10/12/Diploma mark sheets"],
+    "documents": [
+      "AICTE admission allotment letter",
+      "Tuition fee receipts",
+      "Income certificate",
+      "Aadhaar Card",
+      "Class 10/12/Diploma mark sheets"
+    ],
     "application_process": "Submit application online via the National Scholarship Portal (NSP) with verification conducted by the respective AICTE college.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "All India Council for Technical Education (AICTE) / myScheme, Verified: October 2026"
@@ -657,7 +874,13 @@
     "benefits_money": "Rs 50,000 per annum for each year of study towards tuition, equipment purchase, and living costs.",
     "age_limit": "No age limit.",
     "income_limit": "Family annual income must not exceed Rs 8,00,000.",
-    "documents": ["Disability Certificate (minimum 40%) or UDID card", "AICTE college admission proof", "Income certificate", "Aadhaar Card", "Bank passbook"],
+    "documents": [
+      "Disability Certificate (minimum 40%) or UDID card",
+      "AICTE college admission proof",
+      "Income certificate",
+      "Aadhaar Card",
+      "Bank passbook"
+    ],
     "application_process": "Apply via the National Scholarship Portal (NSP) with institutional verification by the AICTE-approved institution.",
     "application_url": "https://scholarships.gov.in/",
     "source_and_verification_date": "AICTE / Ministry of Education, Verified: October 2026"
@@ -670,7 +893,12 @@
     "benefits_money": "Non-institutional financial sponsorship grant of Rs 4,000 per child per month transferred directly to the foster caregiver's bank account.",
     "age_limit": "Children aged 0 to 18 years.",
     "income_limit": "Family annual income must not exceed Rs 72,000 in rural areas or Rs 96,000 in urban areas.",
-    "documents": ["Child's birth certificate/Aadhaar", "Parent's death certificate (if orphan)", "Income certificate", "Child Welfare Committee (CWC) order"],
+    "documents": [
+      "Child's birth certificate/Aadhaar",
+      "Parent's death certificate (if orphan)",
+      "Income certificate",
+      "Child Welfare Committee (CWC) order"
+    ],
     "application_process": "Apply through the District Child Protection Unit (DCPU) or local Child Welfare Committee (CWC).",
     "application_url": "https://wcd.nic.in/",
     "source_and_verification_date": "Ministry of Women and Child Development (MWCD) / myScheme, Verified: October 2026"
@@ -683,7 +911,11 @@
     "benefits_money": "Guaranteed statutory daily minimum wage (notified per state, ranging from Rs 234 to Rs 374+ per day) directly deposited into bank/post office accounts.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit. Universal for rural households.",
-    "documents": ["Aadhaar Card", "MGNREGA Job Card", "Aadhaar-seeded bank account"],
+    "documents": [
+      "Aadhaar Card",
+      "MGNREGA Job Card",
+      "Aadhaar-seeded bank account"
+    ],
     "application_process": "Apply for a Job Card at the local Gram Panchayat office. Submit a written or verbal request for work; work must be provided within 15 days or unemployment allowance applies.",
     "application_url": "https://nrega.nic.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -696,7 +928,11 @@
     "benefits_money": "100% free training and assessment, government-recognized NSQF skill certificate, conveyance allowance, and monetary incentive upon passing assessment.",
     "age_limit": "15 to 45 years.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Voter ID / Bank passbook", "Educational certificates (based on course entry criteria)"],
+    "documents": [
+      "Aadhaar Card",
+      "Voter ID / Bank passbook",
+      "Educational certificates (based on course entry criteria)"
+    ],
     "application_process": "Register on the Skill India Digital Hub (SIDH) portal, browse courses, and enroll at an accredited PMKVY training centre.",
     "application_url": "https://www.skillindiadigital.gov.in/",
     "source_and_verification_date": "Ministry of Skill Development and Entrepreneurship (MSDE), Verified: October 2026"
@@ -709,7 +945,11 @@
     "benefits_money": "Monthly stipend paid to apprentices; government reimburses 25% of prescribed stipend up to Rs 1,500 per month directly via DBT.",
     "age_limit": "14 years and above (18 years for hazardous industries).",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Educational qualification certificates", "Bank account details linked to Aadhaar"],
+    "documents": [
+      "Aadhaar Card",
+      "Educational qualification certificates",
+      "Bank account details linked to Aadhaar"
+    ],
     "application_process": "Register as a candidate on the Apprenticeship India portal and apply for apprenticeship openings posted by registered corporate establishments.",
     "application_url": "https://www.apprenticeshipindia.gov.in/",
     "source_and_verification_date": "Ministry of Skill Development and Entrepreneurship (MSDE), Verified: October 2026"
@@ -719,10 +959,14 @@
     "scheme_name": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
     "scheme_description": "Poverty relief initiative mobilizing rural women into Self-Help Groups (SHGs) to build community savings, micro-enterprises, and sustainable livelihoods.",
     "eligibility": "Rural poor women; at least one woman member from each identified poor household organized into a Self-Help Group (SHG).",
-    "benefits_money": "Revolving Fund of Rs 20,000 to Rs 30,000 per SHG, Community Investment Support Fund, and collateral-free bank credit up to Rs 20,000,000 at subsidized interest rates.",
+    "benefits_money": "Revolving Fund of Rs 20,000 to Rs 30,000 per SHG, Community Investment Support Fund, and collateral-free bank credit up to Rs 20,00,000 at subsidized interest rates.",
     "age_limit": "18 to 65 years.",
     "income_limit": "Targeted at rural poor and vulnerable households identified via Participatory Identification of the Poor (PIP).",
-    "documents": ["Aadhaar Card", "Bank passbook of SHG and member", "Gram Panchayat residency proof"],
+    "documents": [
+      "Aadhaar Card",
+      "Bank passbook of SHG and member",
+      "Gram Panchayat residency proof"
+    ],
     "application_process": "Join or form a village SHG with the help of Community Resource Persons (CRPs) or Gram Panchayat livelihood animators.",
     "application_url": "https://aajeevika.gov.in/",
     "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
@@ -735,7 +979,12 @@
     "benefits_money": "Interest subsidy on bank loans for micro-enterprises (up to Rs 2 lakh for individuals, Rs 10 lakh for groups) reducing effective interest to 7%. Free vocational skill training.",
     "age_limit": "18 to 60 years.",
     "income_limit": "Urban households living below poverty line or designated low-income categories.",
-    "documents": ["Aadhaar Card", "Urban resident proof", "Income certificate / BPL card", "Project proposal for micro-enterprise loan"],
+    "documents": [
+      "Aadhaar Card",
+      "Urban resident proof",
+      "Income certificate / BPL card",
+      "Project proposal for micro-enterprise loan"
+    ],
     "application_process": "Apply through the City Livelihoods Centre (CLC) or the Community Organizer at the local Urban Local Body (Municipal Corporation).",
     "application_url": "https://nulm.gov.in/",
     "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA) / myScheme, Verified: October 2026"
@@ -748,7 +997,10 @@
     "benefits_money": "Built-in Rs 2,00,000 accidental death/permanent total disability insurance cover and seamless portability of social welfare schemes.",
     "age_limit": "16 to 59 years.",
     "income_limit": "Must not be an income tax assessee.",
-    "documents": ["Aadhaar Card (linked to active mobile number)", "Bank savings account details"],
+    "documents": [
+      "Aadhaar Card (linked to active mobile number)",
+      "Bank savings account details"
+    ],
     "application_process": "Self-register on the e-Shram portal using Aadhaar OTP verification, or register via Common Service Centres (CSCs) and State Seva Kendras.",
     "application_url": "https://eshram.gov.in/",
     "source_and_verification_date": "Ministry of Labour and Employment / myScheme, Verified: October 2026"
@@ -761,7 +1013,10 @@
     "benefits_money": "Free access to private and public sector jobs, career aptitude tests, job search assistance, and subsidized counseling. No direct money transfer.",
     "age_limit": "14 years and above.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card / PAN Card", "Educational mark sheets and resume"],
+    "documents": [
+      "Aadhaar Card / PAN Card",
+      "Educational mark sheets and resume"
+    ],
     "application_process": "Sign up for free as a job seeker on the NCS portal, complete your digital profile, and apply directly for job listings and job fairs.",
     "application_url": "https://www.ncs.gov.in/",
     "source_and_verification_date": "Ministry of Labour and Employment / myScheme, Verified: October 2026"
@@ -774,7 +1029,10 @@
     "benefits_money": "Government pays the employer's 12% statutory pension and provident fund contribution for new workers earning up to Rs 15,000/month for 3 years.",
     "age_limit": "18 years and above (worker).",
     "income_limit": "Employee monthly gross wages must not exceed Rs 15,000.",
-    "documents": ["Employer EPFO registration", "Employee Aadhaar-seeded UAN"],
+    "documents": [
+      "Employer EPFO registration",
+      "Employee Aadhaar-seeded UAN"
+    ],
     "application_process": "The employer logs in to the EPFO Unified Portal and submits new employees' UAN details under the scheme tab.",
     "application_url": "https://pmrpy.gov.in/",
     "source_and_verification_date": "Ministry of Labour and Employment / myScheme, Verified: October 2026"
@@ -787,7 +1045,11 @@
     "benefits_money": "Direct job linkages and transparent wage discovery without recruitment agency commissions.",
     "age_limit": "18 to 55 years.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Skill certification (PMKVY/ITI/Diploma)", "Resume / Experience details"],
+    "documents": [
+      "Aadhaar Card",
+      "Skill certification (PMKVY/ITI/Diploma)",
+      "Resume / Experience details"
+    ],
     "application_process": "Register your profile through the Skill India Digital Hub or the ASEEM candidate web app.",
     "application_url": "https://nsdcindia.org/",
     "source_and_verification_date": "National Skill Development Corporation (NSDC), MSDE, Verified: October 2026"
@@ -800,7 +1062,11 @@
     "benefits_money": "Monthly customized salary (Rs 30,000 to Rs 40,000), Rs 48 lakh non-contributory life cover, and a tax-free 'Seva Nidhi' corpus of ~Rs 11.71 lakh upon 4-year completion.",
     "age_limit": "17.5 to 21 years.",
     "income_limit": "No income limit.",
-    "documents": ["Class 10 / 12 passing certificate", "Aadhaar Card", "Domicile and Character certificates"],
+    "documents": [
+      "Class 10 / 12 passing certificate",
+      "Aadhaar Card",
+      "Domicile and Character certificates"
+    ],
     "application_process": "Apply online during open recruitment cycles on the Indian Army, Navy, or Air Force recruitment portals.",
     "application_url": "https://joinindianarmy.nic.in/",
     "source_and_verification_date": "Ministry of Defence / myScheme, Verified: October 2026"
@@ -813,7 +1079,13 @@
     "benefits_money": "Collateral-free loans in 4 categories: Shishu (up to Rs 50,000), Kishore (Rs 50,000 to Rs 5,00,000), Tarun (Rs 5,00,000 to Rs 10,00,000), and Tarun Plus (Rs 10,00,000 to Rs 20,00,000).",
     "age_limit": "18 to 65 years.",
     "income_limit": "No formal income limit; determined by business cash-flow assessment.",
-    "documents": ["Aadhaar Card", "PAN Card", "Business address proof and trade registration", "Bank account statement (last 6 months)", "Quotations for machinery/stock"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business address proof and trade registration",
+      "Bank account statement (last 6 months)",
+      "Quotations for machinery/stock"
+    ],
     "application_process": "Apply online via the JanSamarth or Udyamimitra portal, or submit the MUDRA loan form at any commercial bank, RRB, MFI, or NBFC.",
     "application_url": "https://www.mudra.org.in/",
     "source_and_verification_date": "Department of Financial Services (DFS), MoF / myScheme, Verified: October 2026"
@@ -826,7 +1098,12 @@
     "benefits_money": "Free training with Rs 500 daily stipend, Rs 15,000 e-voucher toolkit incentive, and collateral-free enterprise credit up to Rs 3,00,000 (Rs 1 lakh first tranche, Rs 2 lakh second tranche) at 5% interest.",
     "age_limit": "18 years and above.",
     "income_limit": "Limited to one member per family with no government employees in the household.",
-    "documents": ["Aadhaar Card", "Mobile number linked with Aadhaar", "Bank passbook", "Ration card (proof of family composition)"],
+    "documents": [
+      "Aadhaar Card",
+      "Mobile number linked with Aadhaar",
+      "Bank passbook",
+      "Ration card (proof of family composition)"
+    ],
     "application_process": "Register via biometric authentication at any Common Service Centre (CSC); followed by a 3-stage verification (Gram Panchayat, District, and Screening).",
     "application_url": "https://pmvishwakarma.gov.in/",
     "source_and_verification_date": "Ministry of Micro, Small and Medium Enterprises (MSME), Verified: October 2026"
@@ -839,7 +1116,13 @@
     "benefits_money": "Margin money subsidy of 15% to 35% of project cost (up to Rs 50 lakh for manufacturing and Rs 20 lakh for service units).",
     "age_limit": "18 years and above.",
     "income_limit": "No ceiling on family income for setting up the project.",
-    "documents": ["Aadhaar Card", "PAN Card", "Educational qualification proof (8th pass certificate)", "Detailed Project Report (DPR)", "Caste/Special Category certificate"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Educational qualification proof (8th pass certificate)",
+      "Detailed Project Report (DPR)",
+      "Caste/Special Category certificate"
+    ],
     "application_process": "Submit project proposal and online application on the KVIC PMEGP e-portal; evaluated by District Task Force Committee before forwarding to financing bank.",
     "application_url": "https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
     "source_and_verification_date": "Khadi and Village Industries Commission (KVIC), Ministry of MSME, Verified: October 2026"
@@ -852,7 +1135,14 @@
     "benefits_money": "Bank composite loans (term loan and working capital) between Rs 10,00,000 and Rs 1,00,00,000 covering up to 85% of project cost.",
     "age_limit": "18 years and above.",
     "income_limit": "No specific income limit; borrower must not be in default with any financial institution.",
-    "documents": ["Aadhaar Card", "PAN Card", "Caste certificate (for SC/ST)", "Project report", "Bank statements", "Proof of business premises"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Caste certificate (for SC/ST)",
+      "Project report",
+      "Bank statements",
+      "Proof of business premises"
+    ],
     "application_process": "Apply online through the Stand-Up India portal or visit any scheduled commercial bank branch.",
     "application_url": "https://www.standupmitra.in/",
     "source_and_verification_date": "Department of Financial Services, MoF / myScheme, Verified: October 2026"
@@ -865,7 +1155,13 @@
     "benefits_money": "Credit-linked capital subsidy of 35% of eligible project cost with a maximum ceiling of Rs 10,00,000 per unit, plus Rs 40,000 seed capital per SHG member.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit; ownership of an existing micro food-processing enterprise required.",
-    "documents": ["Aadhaar Card", "PAN Card", "Proof of food business existence / FSSAI license / electricity bills", "Bank statement", "Detailed Project Report"],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Proof of food business existence / FSSAI license / electricity bills",
+      "Bank statement",
+      "Detailed Project Report"
+    ],
     "application_process": "Register on the PMFME portal; District Resource Persons (DRPs) provide handholding support to prepare DPR and submit to the bank.",
     "application_url": "https://pmfme.mofpi.gov.in/",
     "source_and_verification_date": "Ministry of Food Processing Industries (MoFPI) / myScheme, Verified: October 2026"
@@ -878,7 +1174,13 @@
     "benefits_money": "Collateral-free and third-party-guarantee-free loans up to Rs 5,00,00,000 (5 crore) with 75% to 85% guarantee coverage backed by the trust.",
     "age_limit": "18 years and above.",
     "income_limit": "No income limit; based on project viability and credit appraisal.",
-    "documents": ["Udyam Registration Certificate", "Detailed Project Report (DPR)", "PAN Card", "Bank loan application", "KYC documents"],
+    "documents": [
+      "Udyam Registration Certificate",
+      "Detailed Project Report (DPR)",
+      "PAN Card",
+      "Bank loan application",
+      "KYC documents"
+    ],
     "application_process": "Apply for a commercial loan at any scheduled bank or NBFC and request coverage under the CGTMSE guarantee scheme.",
     "application_url": "https://www.cgtmse.in/",
     "source_and_verification_date": "Ministry of MSME and SIDBI, Verified: October 2026"
@@ -891,7 +1193,11 @@
     "benefits_money": "Access to Startup India Seed Fund Scheme (up to Rs 20 lakh grant and Rs 50 lakh debt/convertibles), 3-year income tax exemption under 80-IAC, and 80% rebate on patent filings.",
     "age_limit": "Founders must be 18 years and above.",
     "income_limit": "Company turnover under Rs 100 crore in any financial year.",
-    "documents": ["Certificate of Incorporation / Registration", "PAN of the entity", "Pitch deck / Brief description of innovative nature of product/service"],
+    "documents": [
+      "Certificate of Incorporation / Registration",
+      "PAN of the entity",
+      "Pitch deck / Brief description of innovative nature of product/service"
+    ],
     "application_process": "Create an account on the Startup India portal and apply online for DPIIT Recognition.",
     "application_url": "https://www.startupindia.gov.in/",
     "source_and_verification_date": "DPIIT, Ministry of Commerce and Industry / myScheme, Verified: October 2026"
@@ -904,7 +1210,11 @@
     "benefits_money": "Unlocks priority sector lending, lower bank interest rates, protection against delayed payments under MSMED Act, and government procurement exemptions.",
     "age_limit": "18 years and above.",
     "income_limit": "Micro: Investment <= 1 Cr, Turnover <= 5 Cr; Small: Investment <= 10 Cr, Turnover <= 50 Cr; Medium: Investment <= 50 Cr, Turnover <= 250 Cr.",
-    "documents": ["Aadhaar Card of the proprietor/partner/director", "PAN Card", "GSTIN (if statutory GST registration is applicable)"],
+    "documents": [
+      "Aadhaar Card of the proprietor/partner/director",
+      "PAN Card",
+      "GSTIN (if statutory GST registration is applicable)"
+    ],
     "application_process": "Register online for free on the official Udyam portal by entering Aadhaar and PAN; registration certificate is generated digitally.",
     "application_url": "https://udyamregistration.gov.in/",
     "source_and_verification_date": "Ministry of Micro, Small and Medium Enterprises / myScheme, Verified: October 2026"
@@ -917,7 +1227,11 @@
     "benefits_money": "100% financial grant up to Rs 1,00,00,000 for government agencies (and up to Rs 50 lakh for private agencies) to procure plant and machinery for incubators.",
     "age_limit": "18 years and above (incubated trainees/entrepreneurs).",
     "income_limit": "No income limit.",
-    "documents": ["Institutional registration certificate", "Detailed Project Proposal for incubator", "Audited financial statements"],
+    "documents": [
+      "Institutional registration certificate",
+      "Detailed Project Proposal for incubator",
+      "Audited financial statements"
+    ],
     "application_process": "Submit project proposal through the ASPIRE scheme portal, evaluated by the Project Screening Committee of the Ministry of MSME.",
     "application_url": "https://aspire.msme.gov.in/",
     "source_and_verification_date": "Ministry of MSME / myScheme, Verified: October 2026"
@@ -930,7 +1244,9 @@
     "benefits_money": "No direct individual cash transfer. Funds are utilized for institutional reform, community surveillance, school enrollment drives, and girl-child toilet construction.",
     "age_limit": "Girl children from birth to 18 years.",
     "income_limit": "No income limit. Universal campaign.",
-    "documents": ["Not applicable (programmatic advocacy and institutional interventions)."],
+    "documents": [
+      "Not applicable (programmatic advocacy and institutional interventions)."
+    ],
     "application_process": "Civic, education, and health departments coordinate institutional interventions, maternal health tracking, and school enrollment drives at district level.",
     "application_url": "https://wcd.nic.in/bbbp-schemes",
     "source_and_verification_date": "Ministry of Women and Child Development / myScheme, Verified: October 2026"
@@ -943,7 +1259,9 @@
     "benefits_money": "Free temporary shelter, meals, clothing, legal counsel, and vocational rehabilitation up to 3 years (up to 5 years for women above 55). No direct cash grant.",
     "age_limit": "Women aged 18 years and above (and accompanying children: girls up to 18, boys up to 8).",
     "income_limit": "Destitute and marginalized women without financial means.",
-    "documents": ["Aadhaar Card (if available; absence does not preclude immediate admission)"],
+    "documents": [
+      "Aadhaar Card (if available; absence does not preclude immediate admission)"
+    ],
     "application_process": "Direct walk-in or referral by police, One Stop Centre, District Social Welfare Officer, or Child/Women Helpline (181/112).",
     "application_url": "https://wcd.nic.in/",
     "source_and_verification_date": "Ministry of Women and Child Development / myScheme, Verified: October 2026"
@@ -956,7 +1274,9 @@
     "benefits_money": "Free immediate medical examination, legal assistance, counseling, and temporary shelter up to 5 days. No cash payouts.",
     "age_limit": "No age limit. Accessible to all girls and women.",
     "income_limit": "No income limit. Universal access.",
-    "documents": ["No documents required for immediate rescue and support."],
+    "documents": [
+      "No documents required for immediate rescue and support."
+    ],
     "application_process": "Visit the local Sakhi One Stop Centre situated adjacent to district hospitals, or dial Women Helpline 181 or Emergency 112.",
     "application_url": "https://wcd.nic.in/",
     "source_and_verification_date": "Ministry of Women and Child Development / myScheme, Verified: October 2026"
@@ -969,7 +1289,10 @@
     "benefits_money": "Free food grains: 5 kg per person per month for Priority Households (PHH); 35 kg per family per month for Antyodaya Anna Yojana (AAY) families.",
     "age_limit": "No age limit.",
     "income_limit": "Households identified under state-specific NFSA socio-economic guidelines and BPL lists.",
-    "documents": ["Aadhaar Card", "Valid NFSA / State Ration Card"],
+    "documents": [
+      "Aadhaar Card",
+      "Valid NFSA / State Ration Card"
+    ],
     "application_process": "Collect monthly food grains at any Fair Price Shop (FPS) using biometric authentication via One Nation One Ration Card (ONORC).",
     "application_url": "https://nfsa.gov.in/",
     "source_and_verification_date": "Department of Food and Public Distribution, Verified: October 2026"
@@ -981,8 +1304,13 @@
     "eligibility": "Senior citizens suffering from age-related infirmities or disabilities belonging to Below Poverty Line (BPL) families or earning less than Rs 15,000/month.",
     "benefits_money": "Free distribution of modern assisted-living devices: wheelchairs, walking sticks, crutches, hearing aids, artificial dentures, and spectacles.",
     "age_limit": "60 years and above.",
-    "income_limit": "Monthly income must not exceed Rs 15,00,000, or applicant must possess a valid BPL ration card.",
-    "documents": ["Aadhaar Card", "Age proof", "BPL Certificate or Income certificate (below Rs 15,000/month)", "Medical disability/infirmity certificate"],
+    "income_limit": "Monthly income must not exceed Rs 15,000, or applicant must possess a valid BPL ration card.",
+    "documents": [
+      "Aadhaar Card",
+      "Age proof",
+      "BPL Certificate or Income certificate (below Rs 15,000/month)",
+      "Medical disability/infirmity certificate"
+    ],
     "application_process": "Register on the ALIMCO portal or attend district assessment camps conducted by ALIMCO and the District Social Welfare Department.",
     "application_url": "https://www.alimco.in/",
     "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
@@ -995,7 +1323,12 @@
     "benefits_money": "Free aids and appliances (wheelchairs, motorized tricycles, braille kits, prosthetics, hearing aids, cochlear implants up to Rs 6 lakh for children under 5).",
     "age_limit": "No age limit (cochlear implants prioritized for children up to 5 years).",
     "income_limit": "100% free aids for monthly income up to Rs 22,500; 50% subsidy for income between Rs 22,501 and Rs 30,000 per month.",
-    "documents": ["Disability Certificate (minimum 40%) or UDID Card", "Income Certificate", "Aadhaar Card", "Passport photograph showing disability"],
+    "documents": [
+      "Disability Certificate (minimum 40%) or UDID Card",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Passport photograph showing disability"
+    ],
     "application_process": "Apply online on the ADIP portal or attend localized identification and distribution camps organized by ALIMCO and district agencies.",
     "application_url": "http://adip.depwd.gov.in/",
     "source_and_verification_date": "Department of Empowerment of Persons with Disabilities (DEPwD), Verified: October 2026"
@@ -1008,7 +1341,12 @@
     "benefits_money": "Paperless universal disability ID card granting access to free transport passes, reservations, scholarships, assistive aids, and medical pensions.",
     "age_limit": "No age limit.",
     "income_limit": "No income limit.",
-    "documents": ["Aadhaar Card", "Passport-size photograph", "Scanned copy of signature/thumbprint", "Existing disability certificate (if available)"],
+    "documents": [
+      "Aadhaar Card",
+      "Passport-size photograph",
+      "Scanned copy of signature/thumbprint",
+      "Existing disability certificate (if available)"
+    ],
     "application_process": "Apply online on the Swavlamban portal; visit designated District Medical Hospital for medical evaluation; download digital e-UDID card.",
     "application_url": "https://www.swavlambancard.gov.in/",
     "source_and_verification_date": "Department of Empowerment of Persons with Disabilities (DEPwD), Verified: October 2026"
@@ -1021,7 +1359,12 @@
     "benefits_money": "100% free training and assessment, plus a stipend of Rs 1,000 to Rs 1,500 per month for non-residential training programmes.",
     "age_limit": "18 to 45 years.",
     "income_limit": "No income limit for SC, DNT, and Safai Karamcharis; family income below Rs 3,00,000/year for OBCs; below Rs 1,00,000/year for EBCs.",
-    "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate (for OBC/EBC candidates)", "Bank Passbook"],
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate (for OBC/EBC candidates)",
+      "Bank Passbook"
+    ],
     "application_process": "Register on the PM-DAKSH portal or mobile app, select preferred course and training institute, and complete admission upon batch allotment.",
     "application_url": "https://pmdaksh.dosje.gov.in/",
     "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
@@ -1034,9 +1377,871 @@
     "benefits_money": "Concessional loans up to Rs 15,00,000 at 4% to 6% interest for alternative businesses, and capital subsidies up to Rs 5,00,000 for sewer-cleaning equipment under the Swachhata Udyami Yojana.",
     "age_limit": "18 to 60 years.",
     "income_limit": "No income ceiling for manual scavengers and safai karamcharis.",
-    "documents": ["Aadhaar Card", "Safai Karamchari identification certificate issued by local body / Municipality", "Bank passbook", "Project quotation"],
+    "documents": [
+      "Aadhaar Card",
+      "Safai Karamchari identification certificate issued by local body / Municipality",
+      "Bank passbook",
+      "Project quotation"
+    ],
     "application_process": "Submit application through State Channelizing Agencies (SCAs), Regional Rural Banks, or online via the NSKFDC / JanSamarth portal.",
     "application_url": "https://nskfdc.nic.in/",
     "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_081",
+    "scheme_name": "SVAMITVA Scheme (Survey of Villages and Mapping with Improvised Technology in Village Areas)",
+    "scheme_description": "Uses drone surveying technology to map inhabited rural land parcels and issues legal digital Property Cards (Sampatti Patra) to village homeowners.",
+    "eligibility": "Rural citizens possessing residential houses/land within rural Abadi (inhabited) areas of villages.",
+    "benefits_money": "Confers legal ownership record of property; enables using rural property as financial collateral for bank loans without dispute. No direct cash payout.",
+    "age_limit": "18 years and above (property owner).",
+    "income_limit": "No income limit. Universal for rural abadi residents.",
+    "documents": [
+      "Aadhaar Card",
+      "Gram Panchayat house tax receipt/chowkidari record (if available)",
+      "Mobile number linked with Aadhaar"
+    ],
+    "application_process": "Drone flying is executed by Survey of India and revenue officials. Ground verification is done via Gram Sabha; property cards are downloaded digitally or collected from Panchayat.",
+    "application_url": "https://svamitva.nic.in/",
+    "source_and_verification_date": "Ministry of Panchayati Raj / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_082",
+    "scheme_name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+    "scheme_description": "Voluntary, contributory pension scheme for unorganized workers ensuring a guaranteed lifetime monthly pension from age 60.",
+    "eligibility": "Unorganized workers (maids, drivers, rickshaw pullers, construction workers, cobblers) not covered by EPFO, ESIC, or NPS.",
+    "benefits_money": "Guaranteed minimum monthly pension of Rs 3,000 after age 60; 50% spouse family pension upon beneficiary death. Equal 50:50 government matching contribution.",
+    "age_limit": "18 to 40 years.",
+    "income_limit": "Monthly income must be Rs 15,000 or below.",
+    "documents": [
+      "Aadhaar Card",
+      "Savings Bank Account passbook / Jan Dhan account with auto-debit consent"
+    ],
+    "application_process": "Visit any Common Service Centre (CSC) or self-register on the Maan-dhan portal; monthly auto-debit of Rs 55 to Rs 200 based on entry age.",
+    "application_url": "https://maandhan.in/",
+    "source_and_verification_date": "Ministry of Labour and Employment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_083",
+    "scheme_name": "Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)",
+    "scheme_description": "Old-age social pension scheme providing income security to small and marginal farmers upon reaching senior citizen status.",
+    "eligibility": "Small and marginal farmers owning cultivable land up to 2 hectares (5 acres) in land revenue records.",
+    "benefits_money": "Guaranteed minimum pension of Rs 3,000 per month upon reaching 60 years. Matching 50% contribution paid by Central Government.",
+    "age_limit": "18 to 40 years.",
+    "income_limit": "Small/marginal landholding (up to 2 hectares); must not be an income taxpayer.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Khata/Khasra records (RoR)",
+      "Aadhaar-seeded bank account details"
+    ],
+    "application_process": "Enroll at nearest CSC centre or apply via Maan-dhan portal; option to auto-debit monthly contribution directly from PM-KISAN installment.",
+    "application_url": "https://pmkmy.gov.in/",
+    "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_084",
+    "scheme_name": "National Scheme for Incentive to Girls for Secondary Education (NSIGSE)",
+    "scheme_description": "Incentive scheme to promote secondary school enrollment and prevent dropouts among SC/ST girls and Kasturba Gandhi Balika Vidyalaya graduates.",
+    "eligibility": "All SC/ST girls passing class 8, and girls passing class 8 from KGBVs, enrolling into class 9 in government/aided/local body schools.",
+    "benefits_money": "Fixed deposit of Rs 3,000 in the name of the eligible girl; matured amount with interest is released upon turning 18 and clearing class 10.",
+    "age_limit": "Must be below 16 years of age at the time of joining class 9.",
+    "income_limit": "No income limit for SC/ST and KGBV girls.",
+    "documents": [
+      "Aadhaar Card",
+      "Class 8 passing mark sheet",
+      "School admission certificate in class 9",
+      "Caste Certificate",
+      "Bank passbook"
+    ],
+    "application_process": "Schools submit eligible students' data via the National Scholarship Portal (NSP), verified by District Education Officer (DEO).",
+    "application_url": "https://scholarships.gov.in/",
+    "source_and_verification_date": "Department of School Education & Literacy, MoE / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_085",
+    "scheme_name": "eSanjeevani (National Telemedicine Service / eSanjeevaniOPD)",
+    "scheme_description": "Free doctor-to-patient and doctor-to-doctor virtual consultation platform providing accessible specialist healthcare advice directly via smartphone.",
+    "eligibility": "Open universally to all citizens of India.",
+    "benefits_money": "Free online OPD consultations, specialist diagnostic reviews, and digital prescriptions. Eliminates travel and doctor consultation fees.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit. Universal free access.",
+    "documents": [
+      "Mobile number for OTP registration; prior medical records/prescriptions (optional)"
+    ],
+    "application_process": "Download eSanjeevani mobile app or visit the web portal, register with mobile number, wait in digital queue, consult doctor via video, and download prescription.",
+    "application_url": "https://esanjeevani.mohfw.gov.in/",
+    "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_086",
+    "scheme_name": "PM Young Achievers Scholarship Award Scheme for Vibrant India (PM-YASASVI)",
+    "scheme_description": "Top-class school and college scholarship providing complete financial support to meritorious OBC, EBC, and DNT students.",
+    "eligibility": "Students belonging to OBC, EBC, or De-notified Tribes (DNT) studying in designated top-tier schools in class 9 or 11.",
+    "benefits_money": "Rs 75,000 per year for class 9 and 10 students; Rs 1,25,000 per year for class 11 and 12 students covering school fee and hostel charges.",
+    "age_limit": "Typically 13 to 18 years.",
+    "income_limit": "Annual parental income must not exceed Rs 2,50,000.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste/Category certificate",
+      "Income certificate",
+      "Previous class mark sheet",
+      "Bank passbook"
+    ],
+    "application_process": "Apply online through the National Scholarship Portal (NSP); selected based on merit and institutional verification.",
+    "application_url": "https://scholarships.gov.in/",
+    "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_087",
+    "scheme_name": "Dr. Ambedkar Scheme of Interest Subsidy on Educational Loans for Overseas Studies",
+    "scheme_description": "Provides 100% interest subsidy on education loans for OBC and EBC students pursuing Masters, M.Phil, or Ph.D. abroad.",
+    "eligibility": "Students belonging to OBC or EBC communities who secured admission into accredited universities abroad for master's or doctoral programs.",
+    "benefits_money": "Government pays 100% of the interest payable on the education loan for the entire course period plus one year moratorium.",
+    "age_limit": "No upper age limit.",
+    "income_limit": "Total family annual income must not exceed Rs 8,00,000 (OBC) or Rs 5,00,000 (EBC).",
+    "documents": [
+      "Aadhaar Card",
+      "Caste/Community certificate",
+      "Income certificate",
+      "University admission letter abroad",
+      "Bank education loan sanction letter"
+    ],
+    "application_process": "Apply through the lending bank under IBA guidelines, which submits claims through the Canara Bank nodal portal.",
+    "application_url": "https://socialjustice.gov.in/",
+    "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_088",
+    "scheme_name": "National Apprenticeship Training Scheme (NATS)",
+    "scheme_description": "One-year structured apprenticeship program for engineering/diploma graduates and general stream graduates with direct monthly stipend subsidies.",
+    "eligibility": "Citizens holding a recognized Degree or Diploma in Engineering, Technology, or general streams (BA, B.Sc, B.Com) within 3 years of passing.",
+    "benefits_money": "Monthly stipend (typically Rs 8,000 to Rs 9,000+ depending on qualification), with 50% government direct stipend reimbursement.",
+    "age_limit": "Minimum 18 years; no upper limit.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Degree / Diploma Certificate",
+      "Aadhaar Card",
+      "Bank account linked with Aadhaar",
+      "Resume"
+    ],
+    "application_process": "Enroll on the NATS 2.0 portal, search and apply for verified apprenticeship vacancies posted by public/private industrial establishments.",
+    "application_url": "https://nats.education.gov.in/",
+    "source_and_verification_date": "Ministry of Education (MoE) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_089",
+    "scheme_name": "Pradhan Mantri Virasat Ka Samvardhan (PM VIKAS)",
+    "scheme_description": "Integrated socio-economic empowerment scheme combining skilling, entrepreneurship, leadership, and education for notified minority communities.",
+    "eligibility": "Artisans, craftspersons, women, and youth from 6 notified minority communities (Muslim, Christian, Sikh, Buddhist, Parsi, Jain).",
+    "benefits_money": "Free modern craft and enterprise skilling, monthly training stipend, market linkage grants, and concessional credit support.",
+    "age_limit": "18 to 45 years.",
+    "income_limit": "Family annual income below Rs 3,00,000.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Community Certificate / Self-declaration",
+      "Income Certificate",
+      "Bank passbook"
+    ],
+    "application_process": "Apply via the PM VIKAS portal or through accredited Project Implementing Agencies (PIAs) of the Ministry of Minority Affairs.",
+    "application_url": "https://pmvikas.minorityaffairs.gov.in/",
+    "source_and_verification_date": "Ministry of Minority Affairs / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_090",
+    "scheme_name": "Solar Charkha Mission",
+    "scheme_description": "Promotes solar-powered spinning charkhas and looms in rural areas to generate sustainable non-farm cluster employment for rural women.",
+    "eligibility": "Rural artisans, weavers, spinners (especially women), self-help groups, and khadi institutions.",
+    "benefits_money": "Subsidy of up to Rs 9.54 crore per cluster covering solar charkhas, solar looms, worksheds, and training infrastructure.",
+    "age_limit": "18 to 55 years.",
+    "income_limit": "No income ceiling; priority to rural low-income families.",
+    "documents": [
+      "Aadhaar Card",
+      "Artisan Card / Self-declaration",
+      "Bank Passbook"
+    ],
+    "application_process": "Artisans join designated Solar Charkha Clusters managed by Khadi and Village Industries Commission (KVIC) or designated promoters.",
+    "application_url": "https://www.kviconline.gov.in/",
+    "source_and_verification_date": "Ministry of MSME / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_091",
+    "scheme_name": "National Beekeeping and Honey Mission (NBHM)",
+    "scheme_description": "Initiative under 'Sweet Revolution' providing capital and equipment subsidies to establish scientific beekeeping and honey processing units.",
+    "eligibility": "Individual beekeepers, farmers, landless rural workers, SHGs, and Farmer Producer Organizations (FPOs).",
+    "benefits_money": "Up to 50% to 80% subsidy for purchasing bee boxes, honey bee colonies, honey extractors, and setting up processing laboratories.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account Details",
+      "Land or site availability proof",
+      "Beekeeping training certificate (if completed)"
+    ],
+    "application_process": "Register on the Madhukranti portal or submit an application through the State Horticulture Mission / National Bee Board.",
+    "application_url": "https://nbhm.gov.in/",
+    "source_and_verification_date": "National Bee Board, Ministry of Agriculture / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_092",
+    "scheme_name": "GOBARdhan Scheme (Galvanizing Organic Bio-Agro Resources Dhan)",
+    "scheme_description": "Supports setting up community and commercial Biogas and Compressed Bio-Gas (CBG) plants using cattle dung and agricultural waste.",
+    "eligibility": "Gram Panchayats, dairy cooperatives, rural entrepreneurs, Farmer Producer Organizations, and private entities.",
+    "benefits_money": "Financial assistance up to Rs 50 lakh per district for community biogas plants, and Market Development Assistance of Rs 1,500/MT for fermented organic manure.",
+    "age_limit": "18 years and above (for entrepreneurs).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Land clearance / ownership proof",
+      "DPR for biogas plant",
+      "Aadhaar Card and PAN",
+      "Bank account details"
+    ],
+    "application_process": "Gram Panchayats apply via the Swachh Bharat Mission (Gramin) portal; private CBG developers apply via the Unified GOBARdhan portal.",
+    "application_url": "https://gobardhan.co.in/",
+    "source_and_verification_date": "Department of Drinking Water & Sanitation, Ministry of Jal Shakti, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_093",
+    "scheme_name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+    "scheme_description": "Residential, placement-linked skill training program dedicated to transforming poor rural youth into economically independent wage earners.",
+    "eligibility": "Rural youth from poor households (BPL cardholders, MGNREGA household with 15+ days work, or RSBY/PIP identified families).",
+    "benefits_money": "100% free residential training, food, lodging, uniform, post-placement financial support (Rs 1,000 to Rs 3,000/month for 2-6 months), and guaranteed job placement.",
+    "age_limit": "15 to 35 years (up to 45 years for women, SC, ST, PwD).",
+    "income_limit": "Must belong to an identified rural poor family.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Ration Card / MGNREGA Job Card",
+      "Caste Certificate (if applicable)",
+      "Class 8/10/12 mark sheets"
+    ],
+    "application_process": "Register on the Kaushal Panjee portal or attend Kaushal Melas organized by District Rural Development Agencies (DRDA).",
+    "application_url": "http://ddugky.gov.in/",
+    "source_and_verification_date": "Ministry of Rural Development (MoRD) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_094",
+    "scheme_name": "PM YUVA Scheme for Young Authors (Mentorship Scheme)",
+    "scheme_description": "Mentorship scheme to train young Indian authors to promote Indian culture, heritage, and national history through published literature.",
+    "eligibility": "Indian citizens under 30 years selected through an open national book-proposal writing contest conducted by National Book Trust (NBT).",
+    "benefits_money": "Consolidated scholarship stipend of Rs 50,000 per month for 6 months (total Rs 3,00,000) during book writing, plus 10% royalty on book sales.",
+    "age_limit": "Below 30 years.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Age proof (Birth Certificate/Class 10 mark sheet)",
+      "Manuscript/book proposal as per guidelines"
+    ],
+    "application_process": "Submit a 10,000-word book proposal on the MyGov platform during the open annual contest announced by National Book Trust.",
+    "application_url": "https://www.nbtindia.gov.in/",
+    "source_and_verification_date": "Ministry of Education (MoE) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_095",
+    "scheme_name": "Scheme for Adolescent Girls (SAG) / POSHAN 2.0 for Girls",
+    "scheme_description": "Nutrition and life-skills support scheme for out-of-school adolescent girls to improve nutrition, reproductive health, and return to education.",
+    "eligibility": "Out-of-school adolescent girls in aspirational and designated backward districts.",
+    "benefits_money": "Free take-home rations providing 600 calories and 18-20g protein daily, Iron-Folic Acid tablets, free hygiene kits, and vocational counseling.",
+    "age_limit": "14 to 18 years.",
+    "income_limit": "Targeted at out-of-school adolescent girls from economically backward families.",
+    "documents": [
+      "Aadhaar Card",
+      "MCP Card / Anganwadi registration"
+    ],
+    "application_process": "Register at the nearest village Anganwadi Centre through the Anganwadi Worker (AWW).",
+    "application_url": "https://wcd.nic.in/",
+    "source_and_verification_date": "Ministry of Women and Child Development (MWCD), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_096",
+    "scheme_name": "Mission for Integrated Development of Horticulture (MIDH)",
+    "scheme_description": "Centrally sponsored scheme promoting holistic growth of the horticulture sector including fruit orchards, vegetables, mushrooms, spices, and flowers.",
+    "eligibility": "Farmers, individual growers, self-help groups, and horticulture entrepreneurs.",
+    "benefits_money": "Cost subsidies ranging from 35% to 50% for establishing polyhouses, shade nets, mushroom units, fruit plantations, and cold storage pack-houses.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Land ownership documents (Khasra/Khatauni)",
+      "Bank passbook",
+      "Detailed project estimate"
+    ],
+    "application_process": "Submit application to the District Horticulture Officer (DHO) or through the State Horticulture Mission online portal.",
+    "application_url": "https://midh.gov.in/",
+    "source_and_verification_date": "Department of Agriculture and Farmers Welfare / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_097",
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana - Free Solar Chulha Initiative",
+    "scheme_description": "Initiative deploying indoor solar cooking systems (like Indian Oil's Surya Nutan) connected to outdoor solar panels to provide continuous clean energy cooking.",
+    "eligibility": "Households possessing an active domestic LPG connection, prioritized for existing Ujjwala beneficiaries.",
+    "benefits_money": "Subsidized capital support for procuring grid-hybrid indoor stationary solar cooking systems. Drastically cuts monthly LPG cylinder refills.",
+    "age_limit": "18 years and above.",
+    "income_limit": "Prioritized for low- and middle-income households.",
+    "documents": [
+      "Aadhaar Card",
+      "LPG Consumer Connection ID",
+      "Electricity consumer bill",
+      "Roof access verification"
+    ],
+    "application_process": "Apply through designated Indian Oil / PSU oil marketing company regional campaigns and authorized national procurement portals.",
+    "application_url": "https://iocl.com/",
+    "source_and_verification_date": "Ministry of Petroleum and Natural Gas (MoPNG), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_098",
+    "scheme_name": "National Bamboo Mission (NBM)",
+    "scheme_description": "Promotes the growth and industrial manufacturing of bamboo, bamboo nurseries, furniture, and handicrafts to supplement agricultural income.",
+    "eligibility": "Farmers, artisans, private cultivators, entrepreneur groups, and SHGs having cultivable or non-forest land.",
+    "benefits_money": "Direct financial subsidies of 50% for setting up bamboo nurseries (up to Rs 2.5 lakh to Rs 10 lakh) and up to Rs 25 lakh for bamboo processing units.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Land revenue records / lease proof",
+      "Detailed project report",
+      "Bank passbook"
+    ],
+    "application_process": "Apply via State Bamboo Mission / Agriculture Directorate portal or submit proposal to District Agriculture/Forestry Office.",
+    "application_url": "https://nbm.nic.in/",
+    "source_and_verification_date": "Ministry of Agriculture & Farmers Welfare / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_099",
+    "scheme_name": "National AYUSH Mission (NAM) - Ayush Dispensary Services",
+    "scheme_description": "Promotes accessible holistic medicine (Ayurveda, Yoga, Unani, Siddha, Homeopathy) via free treatments and herbal home gardens.",
+    "eligibility": "Open universally to all citizens of India.",
+    "benefits_money": "Free AYUSH healthcare treatments, free botanical formulations/herbal medicines, and subsidies of up to Rs 2,500 for cultivating home medicinal herbal gardens.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit. Universal access.",
+    "documents": [
+      "Aadhaar Card (for local registration)"
+    ],
+    "application_process": "Direct walk-in to any Ayush Health and Wellness Centre (AHWC) or government AYUSH dispensary.",
+    "application_url": "https://ayush.gov.in/",
+    "source_and_verification_date": "Ministry of Ayush / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_100",
+    "scheme_name": "KAPILA (Kalam Program for IP Literacy and Awareness)",
+    "scheme_description": "Financial reimbursement and handholding scheme encouraging students, faculty, and innovators in higher education to patent their innovations.",
+    "eligibility": "Students and faculty members of higher education institutions pursuing innovations with commercial or technical patent potential.",
+    "benefits_money": "100% financial reimbursement of patent application filing fees and examination fees, plus free intellectual property mentorship.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Student/Faculty ID proof",
+      "Invention disclosure form",
+      "Patent application receipt",
+      "Institutional bank details"
+    ],
+    "application_process": "Apply online on the AICTE KAPILA portal through the institution's Innovation Council (IIC).",
+    "application_url": "https://kapila.mic.gov.in/",
+    "source_and_verification_date": "Ministry of Education Innovation Cell (MIC), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_101",
+    "scheme_name": "Scheme for Economic Empowerment of DNTs (SEED)",
+    "scheme_description": "Comprehensive welfare scheme for De-notified, Nomadic, and Semi-Nomadic Tribes (DNT) providing coaching, health insurance, and housing.",
+    "eligibility": "Citizens belonging to notified DNT/NT/SNT communities not covered under SC/ST/OBC quotas.",
+    "benefits_money": "Free civil/competitive exam coaching, Rs 5,00,000 health insurance under PM-JAY, and Rs 1,20,000 direct grant for home construction under PMAY-G.",
+    "age_limit": "Coaching: 18 to 35 years; Housing/Insurance: Family head (18+).",
+    "income_limit": "Total annual family income must not exceed Rs 2,50,000.",
+    "documents": [
+      "DNT Community Certificate / local revenue certificate",
+      "Aadhaar Card",
+      "Income Certificate",
+      "Bank Passbook"
+    ],
+    "application_process": "Register on the SEED online portal operated by the Department of Social Justice and Empowerment.",
+    "application_url": "https://seed.dosje.gov.in/",
+    "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_102",
+    "scheme_name": "National Action for Mechanized Sanitation Ecosystem (NAMASTE)",
+    "scheme_description": "Aims to eliminate unsafe manual cleaning of sewers and septic tanks by rehabilitating sewer workers into formal sanitation entrepreneurs (Sanipreneurs).",
+    "eligibility": "Sewer and septic tank cleaners, manual scavengers, and their family dependents.",
+    "benefits_money": "Capital subsidy up to Rs 5,00,000 for sewer cleaning machinery, interest subsidies on loans up to Rs 15 lakh, and free PPE safety kits with training.",
+    "age_limit": "18 to 60 years.",
+    "income_limit": "No income limit for certified sewer workers.",
+    "documents": [
+      "Aadhaar Card",
+      "Sewer worker identification certificate / Urban Local Body profiling list",
+      "Bank passbook"
+    ],
+    "application_process": "Urban Local Bodies (ULBs) conduct field profiling of workers; register online through the NAMASTE portal or local municipal commissioner office.",
+    "application_url": "https://namaste.dosje.gov.in/",
+    "source_and_verification_date": "MoHUA & MoSJE Joint Initiative / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_103",
+    "scheme_name": "PM SHRI Schools Scheme (PM Schools for Rising India)",
+    "scheme_description": "Upgrades selected existing schools into model green schools equipped with smart classrooms, modern science/robotics labs, and vocational learning.",
+    "eligibility": "Students studying in designated PM-SHRI central, state, and local body government schools across India.",
+    "benefits_money": "Free high-tech learning environment, robotics/AI lab access, sports kits, and experiential learning tools. No direct cash transfer.",
+    "age_limit": "4 to 18 years.",
+    "income_limit": "No income limit. Universal access for admitted students.",
+    "documents": [
+      "Standard school admission documents",
+      "Aadhaar Card of student"
+    ],
+    "application_process": "Schools are upgraded automatically by the central/state selection committee; students gain access by enrolling in selected PM SHRI schools.",
+    "application_url": "https://pmshrischools.education.gov.in/",
+    "source_and_verification_date": "Department of School Education and Literacy, MoE, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_104",
+    "scheme_name": "Right to Information (RTI) Fellowship Scheme",
+    "scheme_description": "Short-term fellowship offered to researchers, journalists, and civil society professionals to conduct field research on the implementation of the RTI Act.",
+    "eligibility": "Citizens with a master's degree or professionals in media/civil society with minimum 3 years of work experience in transparency and governance.",
+    "benefits_money": "Consolidated grant of Rs 2,00,000 for a 3-month research period, plus Rs 50,000 for travel and contingency expenditure.",
+    "age_limit": "Between 25 and 45 years.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Curriculum Vitae",
+      "Detailed Research Proposal on RTI themes",
+      "Proof of educational qualifications and experience",
+      "Aadhaar Card"
+    ],
+    "application_process": "Submit research proposal and proforma to the Department of Personnel and Training (DoPT) upon release of the annual notification.",
+    "application_url": "https://dopt.gov.in/",
+    "source_and_verification_date": "Department of Personnel and Training (DoPT) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_105",
+    "scheme_name": "Gramin Bhandaran Yojana (Rural Godown Scheme)",
+    "scheme_description": "Capital investment subsidy scheme for building or renovating rural godowns to prevent distress crop sales and enhance storage capacity.",
+    "eligibility": "Farmers, agricultural laborers, SHGs, cooperatives, and rural entrepreneurs owning suitable land.",
+    "benefits_money": "Capital subsidy of 25% (up to Rs 46.87 lakh) for general entrepreneurs and 33.33% (up to Rs 62.50 lakh) for SC/ST/women farmers and hilly regions.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Land title deeds / non-agricultural land clearance",
+      "Detailed Project Report (DPR)",
+      "Bank loan sanction letter"
+    ],
+    "application_process": "Submit project proposal to any commercial bank or NABARD; subsidy is released via NABARD after joint physical inspection.",
+    "application_url": "https://www.nabard.org/",
+    "source_and_verification_date": "NABARD / Ministry of Agriculture, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_106",
+    "scheme_name": "Scheme for Financial Assistance to Veteran Artists",
+    "scheme_description": "Monthly pension assistance provided to elderly, distinguished artists and cultural performers living in penury.",
+    "eligibility": "Veteran artists, writers, and cultural performers who have made significant contributions in traditional arts, literature, dance, or music.",
+    "benefits_money": "Monthly financial artist pension of up to Rs 6,000 per month for life, continuing to the surviving spouse upon death.",
+    "age_limit": "60 years and above.",
+    "income_limit": "Personal annual income must not exceed Rs 48,000 (Rs 4,000 per month).",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate from revenue authority",
+      "Proof of age",
+      "Documentary evidence of artistic contribution / press clips / awards"
+    ],
+    "application_process": "Apply online through the Ministry of Culture artist portal with recommendations from State Culture Directorate or District Magistrate.",
+    "application_url": "https://www.indiaculture.gov.in/",
+    "source_and_verification_date": "Ministry of Culture / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_107",
+    "scheme_name": "SERB National Post Doctoral Fellowship (N-PDF)",
+    "scheme_description": "Fellowship supporting motivated young PhD researchers to undertake cutting-edge frontier research in science and engineering across Indian laboratories.",
+    "eligibility": "Indian citizens holding a Ph.D./M.D./M.S. degree from a recognized university.",
+    "benefits_money": "Monthly fellowship of Rs 55,000 to Rs 60,000 plus HRA, along with an annual research contingency grant of Rs 2,00,000 for 2 years.",
+    "age_limit": "35 years (relaxation of 5 years for SC, ST, OBC, women, and physically challenged candidates).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "PhD degree / provisional certificate",
+      "Detailed research project proposal",
+      "Bio-data and publication list",
+      "Mentor acceptance letter"
+    ],
+    "application_process": "Apply online via the Science and Engineering Research Board (ANRF) portal during open annual proposal calls.",
+    "application_url": "https://www.serbonline.in/",
+    "source_and_verification_date": "Anusandhan National Research Foundation (ANRF), DST / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_108",
+    "scheme_name": "Integrated Scheme for Agricultural Marketing (ISAM)",
+    "scheme_description": "Promotes agricultural marketing infrastructure, quality certification, grading, and standardization of farming produce.",
+    "eligibility": "Farmers, agricultural producers, cooperatives, agribusiness firms, and market committees.",
+    "benefits_money": "Back-ended capital investment subsidy of 25% to 33.33% on infrastructure costs for sorting, grading, and marketing facilities.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Land possession certificate",
+      "DPR for marketing infrastructure",
+      "Bank term loan appraisal"
+    ],
+    "application_process": "Channelized through institutional lending banks with subsidy routed through NABARD or DMI.",
+    "application_url": "https://dmi.gov.in/",
+    "source_and_verification_date": "Directorate of Marketing & Inspection, MoA&FW, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_109",
+    "scheme_name": "Silk Samagra 2 (Integrated Sericulture Development Scheme)",
+    "scheme_description": "Promotes self-sufficiency in silk production by providing subsidies for mulberry plantations, silkworm rearing houses, and automated reeling machines.",
+    "eligibility": "Sericulture farmers, silkworm rearers, reelers, weavers, and women sericulture self-help groups.",
+    "benefits_money": "50% to 75% financial subsidy for constructing silkworm rearing houses, procuring drip irrigation, and purchasing multi-end reeling units.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Land records showing sericulture/host plants",
+      "Bank passbook",
+      "Sericulture training/registration card"
+    ],
+    "application_process": "Apply through the District Sericulture Officer or Directorate of Sericulture in your state.",
+    "application_url": "http://csb.gov.in/",
+    "source_and_verification_date": "Central Silk Board, Ministry of Textiles / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_110",
+    "scheme_name": "SAMARTH (Scheme for Capacity Building in Textile Sector)",
+    "scheme_description": "Demand-driven placement-oriented skilling scheme to build a trained workforce in weaving, garment manufacturing, processing, and traditional textiles.",
+    "eligibility": "Unemployed youth and workers looking for formal certified employment in spinning, weaving, and textile apparel factories.",
+    "benefits_money": "100% free NSQF-aligned training with bio-metric tracking, free assessment, and guaranteed 70% job placement in textile units.",
+    "age_limit": "14 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational qualification proof (minimum 5th/8th pass depending on job role)",
+      "Bank passbook"
+    ],
+    "application_process": "Enroll on the SAMARTH online candidate portal or through empanelled textile industrial training partners.",
+    "application_url": "https://samarth-textiles.gov.in/",
+    "source_and_verification_date": "Ministry of Textiles / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_111",
+    "scheme_name": "Atal Bhujal Yojana (ATAL JAL)",
+    "scheme_description": "Community-led groundwater management scheme focused on water security and behavioral change across water-stressed gram panchayats.",
+    "eligibility": "Gram Panchayats, village water security committees, and farmers in identified water-stressed blocks in 7 states.",
+    "benefits_money": "Incentive financial grants disbursed directly to participating Gram Panchayats for installing water recharge structures and community drip sets.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Water security plan prepared by Gram Panchayat"
+    ],
+    "application_process": "Implemented collectively through community water budgets facilitated by the District Water and Sanitation Mission (DWSM).",
+    "application_url": "https://ataljal.mowr.gov.in/",
+    "source_and_verification_date": "Ministry of Jal Shakti / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_112",
+    "scheme_name": "Pradhan Mantri JI-VAN Yojana (Jaiv Indhan - Vatavaran Anukool Fasal Awashesh Nivaran)",
+    "scheme_description": "Provides financial viability gap support to set up commercial and demonstration 2nd Generation (2G) bio-ethanol projects using crop residues.",
+    "eligibility": "PSUs, private bio-fuel developers, farmer-producer consortia, and joint venture bio-refinery operators.",
+    "benefits_money": "Direct capital grant support of up to Rs 150 crore per commercial 2G ethanol project to convert crop residue into renewable transport fuel.",
+    "age_limit": "18 years and above (promoters).",
+    "income_limit": "Corporate/consortium viability parameters.",
+    "documents": [
+      "Detailed Project Report (DPR)",
+      "Land acquisition proof",
+      "Environmental clearance",
+      "Financing tie-up documents"
+    ],
+    "application_process": "Submit project proposal to the Centre for High Technology (CHT) under the Ministry of Petroleum & Natural Gas.",
+    "application_url": "https://mopng.gov.in/",
+    "source_and_verification_date": "Ministry of Petroleum and Natural Gas, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_113",
+    "scheme_name": "Vibrant Villages Programme (VVP)",
+    "scheme_description": "Comprehensive border village development initiative creating sustainable economic opportunities, eco-tourism, and social infrastructure.",
+    "eligibility": "Residents and local community households living in designated border villages across northern border states.",
+    "benefits_money": "100% centrally sponsored community funding for homestay tourism, cooperative road transport, off-grid power, and enterprise support.",
+    "age_limit": "No age limit.",
+    "income_limit": "Universal for residents of notified border villages.",
+    "documents": [
+      "Aadhaar Card",
+      "Local border resident certificate / Voter ID"
+    ],
+    "application_process": "Beneficiary families coordinate through Village Action Plans formulated by the District Administration and Gram Panchayats.",
+    "application_url": "https://mha.gov.in/",
+    "source_and_verification_date": "Ministry of Home Affairs (MHA) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_114",
+    "scheme_name": "National Urban Health Mission (NUHM) - Urban Health Kiosks",
+    "scheme_description": "Provides dedicated primary healthcare, essential diagnostic packages, and free maternal-child health triage to vulnerable urban populations.",
+    "eligibility": "Urban slum dwellers, homeless individuals, ragpickers, rickshaw pullers, and daily-wage construction laborers.",
+    "benefits_money": "Free primary OPD checkups, free essential pathology tests, and free medicines at urban health posts. Eliminates out-of-pocket clinic expenses.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit; prioritized for urban slum settlements.",
+    "documents": [
+      "Aadhaar Card or local residence identification (not mandatory for basic medical care)"
+    ],
+    "application_process": "Walk-in directly to any Urban Primary Health Centre (UPHC) or Urban Ayushman Arogya Mandir.",
+    "application_url": "https://nhm.gov.in/",
+    "source_and_verification_date": "National Health Mission, MoHFW, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_115",
+    "scheme_name": "National Initiative for Developing and Harnessing Innovations (NIDHI-EIR)",
+    "scheme_description": "Entrepreneur-in-Residence (EIR) support program providing young technology innovators with a monthly stipend to develop prototypes.",
+    "eligibility": "Graduate science and engineering innovators holding a working technological concept who commit full-time to an incubator.",
+    "benefits_money": "Monthly subsistence fellowship grant of up to Rs 30,000 per month for up to 18 months, plus prototyping lab access.",
+    "age_limit": "Typically 21 to 35 years.",
+    "income_limit": "Applicant must not earn a salary from other employment during the fellowship period.",
+    "documents": [
+      "Aadhaar Card",
+      "Degree certificate in STEM",
+      "Technology innovation proposal",
+      "Incubation acceptance letter"
+    ],
+    "application_process": "Apply directly through any DST-approved Technology Business Incubator (TBI) hosting the NIDHI-EIR program.",
+    "application_url": "https://nidhi-eir.in/",
+    "source_and_verification_date": "Department of Science & Technology (DST) / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_116",
+    "scheme_name": "Support for Marginalised Individuals for Livelihood and Enterprise (SMILE)",
+    "scheme_description": "Rehabilitation initiative providing comprehensive medical, educational, skill development, and economic rehabilitation for individuals engaged in begging and transgender persons.",
+    "eligibility": "Persons engaged in begging, and individuals belonging to the transgender community.",
+    "benefits_money": "Free medical care, skill training with daily stipend, scholarship for transgender students (Rs 13,500/year), and capital subsidies for self-employment.",
+    "age_limit": "18 years and above (scholarship from 9th grade).",
+    "income_limit": "Destitute status / transgender certificate.",
+    "documents": [
+      "Transgender Certificate (from National Transgender Portal) or destitute identification by local body",
+      "Aadhaar Card",
+      "Bank passbook"
+    ],
+    "application_process": "Apply via the national SMILE portal or register at Garima Greh shelter homes and District Social Welfare Offices.",
+    "application_url": "https://transgender.dosje.gov.in/",
+    "source_and_verification_date": "Ministry of Social Justice and Empowerment / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_117",
+    "scheme_name": "Operation Greens (Short Term and Long Term Components)",
+    "scheme_description": "Price stabilization and supply-chain infrastructure scheme for Tomato, Onion, and Potato (TOP) and 22 perishable crops.",
+    "eligibility": "Farmer Producer Organizations (FPOs), food processors, logistics providers, and individual farm cooperatives.",
+    "benefits_money": "50% freight subsidy for railway/air transport during market gluts, and 50% capital subsidy (up to Rs 50 crore) for integrated cold chains.",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "FPO/Firm registration certificate",
+      "Farmer member registry",
+      "Detailed project report",
+      "Transport receipts (for freight claim)"
+    ],
+    "application_process": "Apply online through the SAMPADA portal of the Ministry of Food Processing Industries.",
+    "application_url": "https://mofpi.gov.in/",
+    "source_and_verification_date": "Ministry of Food Processing Industries (MoFPI), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_118",
+    "scheme_name": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
+    "scheme_description": "Corrects regional imbalances in quality tertiary healthcare by establishing new All India Institutes of Medical Sciences (AIIMS) and upgrading state medical colleges.",
+    "eligibility": "Universal access for all Indian patients needing super-specialty medical treatment.",
+    "benefits_money": "Highly subsidized or free super-specialty surgery, advanced oncology, neurosurgery, and diagnostics. Eliminates high private tertiary hospital bills.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "OPD registration / Aadhaar Card"
+    ],
+    "application_process": "Book physical or online OPD appointments at newly operational AIIMS institutes or upgraded government medical colleges.",
+    "application_url": "https://pmssy.mohfw.gov.in/",
+    "source_and_verification_date": "Ministry of Health and Family Welfare (MoHFW), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_119",
+    "scheme_name": "National Clean Air Programme (NCAP) - City Civic Grants",
+    "scheme_description": "National mitigation plan targeted at non-attainment cities to reduce particulate matter air pollution (PM2.5 and PM10) by 40%.",
+    "eligibility": "Urban local bodies, municipal corporations, and citizens in 131 non-attainment cities across India.",
+    "benefits_money": "Direct central performance grants to cities to construct paved roads, mechanical vacuum street sweepers, and public air purification smog towers.",
+    "age_limit": "No age limit.",
+    "income_limit": "Universal municipal benefit.",
+    "documents": [
+      "City Action Plan submitted by Municipal Commissioner"
+    ],
+    "application_process": "City municipal corporations formulate and execute clean air action plans monitored through the PRANA portal.",
+    "application_url": "https://prana.cpcb.gov.in/",
+    "source_and_verification_date": "Central Pollution Control Board (CPCB), MoEFCC, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_120",
+    "scheme_name": "Pravasi Kaushal Vikas Yojana (PKVY)",
+    "scheme_description": "Institutional training program providing international-standard skill certification and pre-departure orientation to Indian workers seeking overseas employment.",
+    "eligibility": "Indian citizens seeking overseas employment in blue-collar and service-sector roles abroad.",
+    "benefits_money": "Free customized vocational certification, language training, pre-departure orientation, and international trade test facilitation.",
+    "age_limit": "18 to 45 years.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Valid Indian Passport",
+      "Aadhaar Card",
+      "Proof of technical skill / trade experience"
+    ],
+    "application_process": "Register on the NSDC International portal or approach authorized Pre-Departure Orientation Training (PDOT) centres.",
+    "application_url": "https://www.nsdcindia.org/",
+    "source_and_verification_date": "Ministry of External Affairs & MSDE, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_121",
+    "scheme_name": "PM Mega Integrated Textile Region and Apparel (PM MITRA)",
+    "scheme_description": "Establishes world-class integrated textile parks offering end-to-end spinning, weaving, processing, and garmenting facilities to create large-scale jobs.",
+    "eligibility": "Textile manufacturing companies, industrial workers, and weavers seeking employment in integrated textile clusters.",
+    "benefits_money": "Competitiveness Incentive Support (CIS) of up to Rs 300 crore per park; massive local wage employment creation for rural youth.",
+    "age_limit": "18 years and above (workers).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Industrial project proposal (for units); Aadhaar and skill proof (for workers)"
+    ],
+    "application_process": "Industrial units apply via State Industrial Development Corporations; job seekers apply through on-site recruiting park desks.",
+    "application_url": "https://texmin.nic.in/",
+    "source_and_verification_date": "Ministry of Textiles / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_122",
+    "scheme_name": "Venture Capital Fund for Scheduled Castes (VCF-SC)",
+    "scheme_description": "Social venture capital initiative providing concessional equity and debt financing to encourage entrepreneurship among Scheduled Caste founders.",
+    "eligibility": "SC entrepreneurs running business entities where SC promoters hold at least 51% stake for at least 6 months prior.",
+    "benefits_money": "Financial equity/debt assistance from Rs 20 lakh up to Rs 15 crore at low interest (as low as 4% for women/disabled SC entrepreneurs).",
+    "age_limit": "18 years and above.",
+    "income_limit": "No income ceiling; project viability evaluated on cash flow.",
+    "documents": [
+      "Caste Certificate of promoters",
+      "Company Incorporation Certificate / RoC filings",
+      "PAN of company",
+      "Detailed Business Plan"
+    ],
+    "application_process": "Submit detailed investment proposal directly on the IFCI Venture portal under the VCF-SC window.",
+    "application_url": "https://www.vcfsc.in/",
+    "source_and_verification_date": "Ministry of Social Justice and Empowerment / IFCI, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_123",
+    "scheme_name": "National Heritage Development and Augmentation Yojana (HRIDAY)",
+    "scheme_description": "Preserves and revitalizes the civic infrastructure, heritage streets, and monuments of declared historic pilgrimage cities.",
+    "eligibility": "Local communities, traditional shopkeepers, and artisans in 12 notified heritage cities (e.g., Varanasi, Amritsar, Puri, Ajmer).",
+    "benefits_money": "100% centrally funded urban infrastructure upgrades: solar streetlighting, heritage pathways, clean drainage, and tourist facilities.",
+    "age_limit": "No age limit.",
+    "income_limit": "Universal civic improvement in heritage zones.",
+    "documents": [
+      "Not applicable for public infrastructure access."
+    ],
+    "application_process": "City-level Heritage Development Plans formulated by the National Institute of Urban Affairs (NIUA) and executed by Urban Local Bodies.",
+    "application_url": "https://mohua.gov.in/",
+    "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_124",
+    "scheme_name": "PM National Apprenticeship Mela (PMNAM)",
+    "scheme_description": "Monthly nationwide single-day physical recruitment drive linking local youth directly with industrial establishments for apprenticeship contracts.",
+    "eligibility": "Youth holding 5th to 12th pass qualifications, ITI certificates, diploma certificates, or college graduate degrees.",
+    "benefits_money": "Instant on-the-spot apprenticeship contract offers with guaranteed monthly stipends (Rs 7,000 to Rs 12,000+ per month).",
+    "age_limit": "14 years and above (18 years for heavy industries).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational mark sheets (10th/12th/ITI/Degree)",
+      "Resume (multiple copies)",
+      "Bank passbook"
+    ],
+    "application_process": "Register on the Apprenticeship portal and attend the physical recruitment camp held on the second Monday of every month across districts.",
+    "application_url": "https://www.apprenticeshipindia.gov.in/",
+    "source_and_verification_date": "Ministry of Skill Development and Entrepreneurship (MSDE), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_125",
+    "scheme_name": "National Mission on Cultural Mapping (NMCM) / Mera Gaon Meri Dharohar",
+    "scheme_description": "Maps the cultural heritage, traditional arts, unique crafts, and oral folklore of every Indian village into a national digital repository.",
+    "eligibility": "Village artisans, folk singers, traditional performers, weavers, and heritage practitioners in rural India.",
+    "benefits_money": "Official national cultural listing, direct invitation to national cultural melas, and access to performance grants and artist stipends.",
+    "age_limit": "No age limit.",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Aadhaar Card",
+      "Brief description/photos/video of artistic heritage"
+    ],
+    "application_process": "Field surveyors and Common Service Centre (CSC) VLEs profile villages and artists via the Mera Gaon Meri Dharohar mobile app.",
+    "application_url": "https://mgmd.gov.in/",
+    "source_and_verification_date": "Ministry of Culture / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_126",
+    "scheme_name": "Financial Assistance for Tagore Cultural Complexes (TCC)",
+    "scheme_description": "Provides financial grants to construct, upgrade, and modernize cultural auditoriums, dance spaces, and open-air performance theatres.",
+    "eligibility": "State Government agencies, autonomous cultural bodies, universities, and non-profit cultural trusts.",
+    "benefits_money": "Financial assistance covering up to 60% of project cost (up to Rs 50 crore) for state capitals and Rs 15 crore for other cities.",
+    "age_limit": "Not applicable (organizational scheme).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Detailed Project Report (DPR)",
+      "Land possession documents",
+      "Audited balance sheets (for NGOs/trusts)",
+      "Trust registration"
+    ],
+    "application_process": "Submit project proposal on the Ministry of Culture web portal; vetted by the National Expert Committee.",
+    "application_url": "https://www.indiaculture.gov.in/",
+    "source_and_verification_date": "Ministry of Culture / myScheme, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_127",
+    "scheme_name": "Remission of Duties and Taxes on Exported Products (RoDTEP) for Small Exporters",
+    "scheme_description": "Reimburses un-refunded embedded central, state, and local duties and taxes incurred by micro and small exporters on exported items.",
+    "eligibility": "All domestic manufacturers and merchant exporters exporting eligible goods from India.",
+    "benefits_money": "Direct tax rebate of 0.5% to 4.3% of FOB value issued as transferable electronic duty credit scrips on the ICEGATE customs ledger.",
+    "age_limit": "18 years and above (proprietor/director).",
+    "income_limit": "No income limit.",
+    "documents": [
+      "Importer-Exporter Code (IEC)",
+      "GSTIN",
+      "Shipping bills",
+      "Digital Signature Certificate (DSC)"
+    ],
+    "application_process": "File electronic export shipping bill with RoDTEP claim code on the ICEGATE customs digital portal; scrip credited to e-ledger.",
+    "application_url": "https://www.icegate.gov.in/",
+    "source_and_verification_date": "Directorate General of Foreign Trade (DGFT), MoC&I, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_128",
+    "scheme_name": "PM e-Bus Sewa Scheme",
+    "scheme_description": "Deploys 10,000 electric buses under a Public-Private Partnership model to enhance green urban public transit in tier-2 and tier-3 cities.",
+    "eligibility": "Residents and daily commuters in cities with a population between 3,00,000 and 40,00,000.",
+    "benefits_money": "Affordable, air-conditioned green public transport, subsidized concession passes for students and senior citizens, and zero tailpipe emissions.",
+    "age_limit": "No age limit.",
+    "income_limit": "Universal public transit benefit.",
+    "documents": [
+      "Not applicable for riding transit; concession passes require student ID / Senior Citizen ID"
+    ],
+    "application_process": "City buses are rolled out by urban municipal transport authorities; passes booked via local city transit apps or ticket windows.",
+    "application_url": "https://mohua.gov.in/",
+    "source_and_verification_date": "Ministry of Housing and Urban Affairs (MoHUA), Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_129",
+    "scheme_name": "Credit Guarantee Scheme for Micro Units (CGS-MU)",
+    "scheme_description": "Backs micro-loans extended under Pradhan Mantri MUDRA Yojana with sovereign guarantee coverage to eliminate bank collateral demands.",
+    "eligibility": "Micro borrowers sanctioned micro-loans up to Rs 10 lakh (and Rs 20 lakh under Tarun Plus) by commercial banks or NBFCs.",
+    "benefits_money": "Provides 75% to 85% credit guarantee against default, ensuring banks do not demand mortgage or third-party collateral from micro-entrepreneurs.",
+    "age_limit": "18 to 65 years.",
+    "income_limit": "Based on business cash flow assessment.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business proof / Udyam Certificate",
+      "Bank loan sanction letter"
+    ],
+    "application_process": "Automatic portfolio coverage processed directly between the lending bank and the National Credit Guarantee Trustee Company (NCGTC).",
+    "application_url": "https://www.ncgtc.in/",
+    "source_and_verification_date": "Department of Financial Services, Ministry of Finance, Verified: October 2026"
+  },
+  {
+    "id": "SCHEME_130",
+    "scheme_name": "Gram Ujala Scheme",
+    "scheme_description": "Supplies high-efficiency, branded LED bulbs to rural households at a heavily subsidized cost to reduce household electricity bills.",
+    "eligibility": "Rural households possessing an active domestic electricity meter connection.",
+    "benefits_money": "Exchange of working incandescent bulbs for branded 7W and 12W LED bulbs at a subsidized cost of only Rs 10 per bulb (up to 5 bulbs per home).",
+    "age_limit": "18 years and above (meter holder).",
+    "income_limit": "No income limit. Universal for rural metered homes.",
+    "documents": [
+      "Latest electricity bill",
+      "Aadhaar Card or Voter ID",
+      "Working incandescent filament bulbs for trade-in"
+    ],
+    "application_process": "Collect LED bulbs at distribution counters established by Convergence Energy Services Limited (CESL) at village panchayats.",
+    "application_url": "https://ceslindia.org/",
+    "source_and_verification_date": "Energy Efficiency Services Limited (EESL), Ministry of Power, Verified: October 2026"
   }
 ]
