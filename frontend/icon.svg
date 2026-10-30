@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f4a9e"/>
+      <stop offset="100%" stop-color="#192a60"/>
+    </linearGradient>
+    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8a245"/>
+      <stop offset="100%" stop-color="#f08a24"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)"/>
+
+  <!-- Warm Border Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#f08a24" stroke-width="8" opacity="0.8"/>
+
+  <!-- Voice Waves (Sound Arc Rings) -->
+  <path d="M 360 210 A 120 120 0 0 1 360 302" fill="none" stroke="#f8a245" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 390 185 A 160 160 0 0 1 390 327" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 152 210 A 120 120 0 0 0 152 302" fill="none" stroke="#f8a245" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 122 185 A 160 160 0 0 0 122 327" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Friendly Volunteer Character -->
+  <!-- Shoulders & Kurta -->
+  <path d="M 160 400 C 160 340, 200 320, 256 320 C 312 320, 352 340, 352 400 C 352 440, 160 440, 160 400 Z" fill="#ffffff" filter="url(#shadow)"/>
+  <!-- Kurta Collar & Saffron Trim -->
+  <path d="M 236 322 L 256 360 L 276 322 Z" fill="#f08a24"/>
+  <line x1="256" y1="360" x2="256" y2="420" stroke="#f08a24" stroke-width="4"/>
+
+  <!-- Head / Face -->
+  <circle cx="256" cy="245" r="68" fill="#fbd5b5"/>
+
+  <!-- Warm Smile -->
+  <path d="M 232 270 Q 256 295 280 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Kind Eyes -->
+  <circle cx="234" cy="240" r="6" fill="#3c2415"/>
+  <circle cx="278" cy="240" r="6" fill="#3c2415"/>
+
+  <!-- Kind Eyebrows -->
+  <path d="M 224 228 Q 236 222 246 228" fill="none" stroke="#4a2c1a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 266 228 Q 276 222 288 228" fill="none" stroke="#4a2c1a" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Saffron Turban / Pagri (Traditional Indian volunteer look) -->
+  <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 C 310 200, 290 195, 256 195 C 222 195, 202 200, 186 215 Z" fill="url(#saffronGrad)" filter="url(#shadow)"/>
+  <!-- Pagri folds -->
+  <path d="M 188 200 Q 256 170 324 200" fill="none" stroke="#d47012" stroke-width="4"/>
+  <path d="M 194 175 Q 256 150 318 175" fill="none" stroke="#d47012" stroke-width="4"/>
+  <!-- Small Golden Turban Brooch -->
+  <circle cx="256" cy="180" r="8" fill="#ffdd66" stroke="#b8860b" stroke-width="2"/>
+
+  <!-- Helpdesk Headset Microphone -->
+  <path d="M 326 240 A 70 70 0 0 1 270 308 L 260 306" fill="none" stroke="#2f4a9e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="256" cy="306" r="6" fill="#1f8a4c"/>
+</svg>

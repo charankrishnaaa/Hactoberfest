@@ -1,5 +1,4 @@
 fastapi
 uvicorn
 groq
-scikit-learn
 python-multipart

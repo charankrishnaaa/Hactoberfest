@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Bolo - Voice Help-Desk for Government Schemes</title>
+  <meta name="description" content="Voice-first assistant helping rural and semi-urban Indian citizens discover government welfare schemes in their own language.">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f4a9e">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility Live Region for Screen Readers -->
+  <div id="aria-status" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="app-container">
+    <!-- Top App Header -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-wrapper">
+          <div class="brand-avatar" aria-hidden="true">
+            <svg viewBox="0 0 512 512" width="100%" height="100%">
+              <circle cx="256" cy="256" r="240" fill="#2f4a9e"/>
+              <circle cx="256" cy="245" r="70" fill="#fbd5b5"/>
+              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#f08a24"/>
+              <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="234" cy="240" r="6" fill="#3c2415"/>
+              <circle cx="278" cy="240" r="6" fill="#3c2415"/>
+            </svg>
+          </div>
+          <div class="brand-title">
+            <span>Bolo</span>
+            <span class="brand-badge">బోలో • बोलो</span>
+          </div>
+        </div>
+
+        <!-- Language Selector Chips -->
+        <nav class="lang-selector" aria-label="Language selection">
+          <button type="button" class="lang-btn active" data-lang="auto">Auto</button>
+          <button type="button" class="lang-btn" data-lang="te">తెలుగు</button>
+          <button type="button" class="lang-btn" data-lang="hi">हिन्दी</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </nav>
+      </div>
+
+      <!-- Time of Day Greeting & Reset Chat -->
+      <div class="greeting-bar">
+        <span id="header-greeting" class="greeting-text">Namaste! How can I help you?</span>
+        <button type="button" id="btn-new-chat" class="reset-chat-btn" title="Start fresh conversation">
+          <span>+</span>
+          <span id="lbl-new-chat">New Question</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- System Notification Banners -->
+    <div id="banner-offline" class="system-banner offline" role="alert">
+      <span>⚠️ You are offline. Please check your internet connection.</span>
+    </div>
+    <div id="banner-waking" class="system-banner loading-wake" role="status">
+      <span>⏳ Waking up server, one moment please...</span>
+    </div>
+    <div id="banner-voice-unavail" class="system-banner voice-unavail" role="status">
+      <span>ℹ️ Spoken voice unavailable on this device. Displaying text response.</span>
+    </div>
+
+    <!-- ==================== SCREEN 1: TALK (HOME) ==================== -->
+    <main id="screen-talk" class="screen talk-screen active">
+      <!-- Voice Orb Section -->
+      <section class="orb-section" aria-label="Voice conversation orb">
+        <div id="orb-wrapper" class="orb-container state-idle" tabindex="0" role="button" aria-label="Microphone button: Tap to talk">
+          <div class="orb-ripple orb-ripple-1"></div>
+          <div class="orb-ripple orb-ripple-2"></div>
+          
+          <div class="voice-orb">
+            <!-- Mic Icon -->
+            <svg id="icon-mic" class="orb-icon" viewBox="0 0 24 24">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+              <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div id="orb-status" class="orb-status-badge">Tap to talk in your language</div>
+        
+        <button type="button" id="btn-stop-speaking" class="orb-stop-btn">
+          ⏹️ <span id="lbl-stop-voice">Stop Bolo</span>
+        </button>
+      </section>
+
+      <!-- Topic Starter Tiles -->
+      <section class="starter-section" aria-label="Category Starter Questions">
+        <div class="section-label" id="lbl-starter-topics">Or pick a topic to ask:</div>
+        <div class="starter-chips-scroll" id="starter-tiles-container">
+          <!-- Injected via JS based on current language -->
+        </div>
+      </section>
+
+      <!-- Chat Bubble Container -->
+      <section class="chat-messages" id="chat-messages" aria-live="polite">
+        <!-- Welcoming Volunteer Message -->
+        <div class="chat-row bolo">
+          <div class="bubble-avatar" aria-hidden="true">
+            <svg viewBox="0 0 512 512" width="100%" height="100%">
+              <circle cx="256" cy="256" r="240" fill="#2f4a9e"/>
+              <circle cx="256" cy="245" r="70" fill="#fbd5b5"/>
+              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#f08a24"/>
+              <circle cx="234" cy="240" r="6" fill="#3c2415"/>
+              <circle cx="278" cy="240" r="6" fill="#3c2415"/>
+              <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="bubble bolo-bubble">
+            <div class="bubble-text" id="welcome-bubble-msg">
+              Namaste! I am Bolo, your village help-desk volunteer. You can talk to me directly by tapping the mic, or type your question below. How can I help you with government schemes today?
+            </div>
+            <div class="bubble-footer">
+              <div class="bubble-tools-row">
+                <button type="button" class="listen-again-btn welcome-listen-btn">
+                  🔊 <span class="lbl-listen-again">Listen</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sticky Backup Text Input Bar -->
+      <div class="chat-input-bar">
+        <input type="text" id="chat-text-input" class="text-input-field" placeholder="Type your question..." autocomplete="off">
+        <button type="button" id="btn-send-text" class="send-msg-btn" aria-label="Send question">
+          <svg viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- ==================== SCREEN 2: SCHEMES ==================== -->
+    <main id="screen-schemes" class="screen schemes-screen">
+      <div class="search-box-wrapper">
+        <input type="text" id="schemes-search-input" class="search-input" placeholder="Search 130+ schemes (e.g. Kisan, Awas, Health)...">
+        <span class="search-icon-badge" aria-hidden="true">🔍</span>
+      </div>
+
+      <!-- Categories Filter Chips -->
+      <div class="cat-chips-scroll" id="categories-filter-scroll" aria-label="Filter schemes by category">
+        <!-- Rendered dynamically from GET /categories -->
+      </div>
+
+      <!-- Scheme Cards List -->
+      <div class="schemes-list" id="schemes-cards-list">
+        <!-- Rendered dynamically -->
+      </div>
+    </main>
+
+    <!-- ==================== SCREEN 3: SAVED ==================== -->
+    <main id="screen-saved" class="screen saved-screen">
+      <!-- Bookmarked Schemes Section -->
+      <section class="saved-section">
+        <div class="saved-header-row">
+          <div class="section-label" id="lbl-saved-schemes-title">Saved Schemes</div>
+        </div>
+        <div id="saved-schemes-container" class="schemes-list">
+          <div class="empty-state" id="lbl-empty-saved">No saved schemes yet. Tap the heart icon on any scheme to save it for quick offline reference.</div>
+        </div>
+      </section>
+
+      <!-- Recent Questions Section -->
+      <section class="saved-section" style="margin-top: 12px;">
+        <div class="saved-header-row">
+          <div class="section-label" id="lbl-recent-questions-title">Recent Questions (Last 10)</div>
+          <button type="button" id="btn-clear-questions" class="clear-btn">Clear All</button>
+        </div>
+        <div id="recent-questions-container" class="schemes-list">
+          <div class="empty-state" id="lbl-empty-questions">No recent questions asked yet.</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== BOTTOM SHEET MODAL (SCHEME DETAILS) ==================== -->
+    <div id="bottom-sheet-backdrop" class="bottom-sheet-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="bottom-sheet" id="bottom-sheet-content">
+        <div class="sheet-handle-bar"></div>
+        
+        <div class="sheet-header">
+          <div class="sheet-title-group">
+            <span class="cat-tag" id="sheet-cat-badge">Category</span>
+            <h2 class="card-title" id="sheet-scheme-title" style="margin-top: 4px;">Scheme Title</h2>
+            <div style="font-size: 13px; color: var(--text-muted); margin-top: 2px;" id="sheet-verified-date">Verified</div>
+          </div>
+          <button type="button" class="sheet-close-btn" id="btn-close-sheet" aria-label="Close details">✕</button>
+        </div>
+
+        <div class="sheet-body">
+          <!-- Benefits Highlight -->
+          <div class="benefit-highlight-box" id="sheet-benefit-box">
+            💰 Benefit: ...
+          </div>
+
+          <!-- Description -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-desc">What it is</div>
+            <div class="sheet-section-content" id="sheet-desc-content">...</div>
+          </div>
+
+          <!-- Eligibility -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-eligibility">Eligibility Criteria</div>
+            <div class="sheet-section-content" id="sheet-eligibility-content">...</div>
+          </div>
+
+          <!-- Age & Income Limits -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-limits">Age & Income Limits</div>
+            <div class="sheet-section-content">
+              <div><strong>Age Limit:</strong> <span id="sheet-age-content">None</span></div>
+              <div style="margin-top: 4px;"><strong>Income Limit:</strong> <span id="sheet-income-content">None</span></div>
+            </div>
+          </div>
+
+          <!-- Interactive Documents Checklist -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-docs">Required Documents Checklist</div>
+            <div class="checklist-container" id="sheet-docs-checklist">
+              <!-- Rendered dynamically with checkboxes -->
+            </div>
+          </div>
+
+          <!-- How to Apply -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-apply">How to Apply</div>
+            <div class="sheet-section-content" id="sheet-apply-content">...</div>
+          </div>
+
+          <!-- Official Portal Link -->
+          <div class="sheet-section">
+            <div class="sheet-section-title" id="lbl-sheet-portal">Official Portal</div>
+            <a href="#" id="sheet-official-url" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 15px; word-break: break-all;">
+              Visit Official Website ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Sticky Actions -->
+        <div class="sheet-actions">
+          <div class="sheet-actions-row">
+            <button type="button" class="sheet-btn ask" id="sheet-btn-ask">
+              🗣️ <span id="lbl-sheet-ask">Ask Bolo</span>
+            </button>
+            <button type="button" class="sheet-btn listen" id="sheet-btn-listen">
+              🔊 <span id="lbl-sheet-listen">Listen</span>
+            </button>
+          </div>
+          <div class="sheet-actions-row">
+            <button type="button" class="sheet-btn save" id="sheet-btn-save">
+              🤍 <span id="lbl-sheet-save">Save</span>
+            </button>
+            <a href="#" class="sheet-btn share" id="sheet-btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              📲 <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== BOTTOM TAB BAR ==================== -->
+    <nav class="bottom-nav" aria-label="Bottom Navigation">
+      <button type="button" class="nav-tab active" data-tab="talk" id="tab-btn-talk">
+        <svg viewBox="0 0 24 24">
+          <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+        </svg>
+        <span id="nav-lbl-talk">Talk</span>
+      </button>
+
+      <button type="button" class="nav-tab" data-tab="schemes" id="tab-btn-schemes">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/>
+        </svg>
+        <span id="nav-lbl-schemes">Schemes</span>
+      </button>
+
+      <button type="button" class="nav-tab" data-tab="saved" id="tab-btn-saved">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span id="nav-lbl-saved">Saved</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
