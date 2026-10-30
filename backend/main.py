@@ -153,9 +153,19 @@ def load_and_index_schemes():
     """Loads schemes.json from disk and constructs the in-memory TF-IDF index."""
     global schemes_data, schemes_by_id, category_counts, doc_vectors, doc_norms, idf_dict
     
-    # Try finding schemes.json in current directory, backend/, or parent
+    # Try finding schemes.json in base dir, current directory, backend/, or parent
     target_path = None
-    for p in ["schemes.json", "backend/schemes.json", "../schemes.json"]:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    candidates = [
+        os.path.join(base_dir, "schemes.json"),
+        os.path.join(base_dir, "..", "schemes.json"),
+        os.path.join(os.getcwd(), "schemes.json"),
+        os.path.join(os.getcwd(), "backend", "schemes.json"),
+        "schemes.json",
+        "backend/schemes.json",
+        "../schemes.json"
+    ]
+    for p in candidates:
         if os.path.exists(p):
             target_path = p
             break

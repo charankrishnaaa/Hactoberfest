@@ -1,4 +1,4 @@
-// Bolo - Voice-first Government Schemes Help-Desk App
+// Bolo - Voice-first Government Schemes Help-Desk App (White & Green Farmer Theme)
 // Pure Vanilla JavaScript, No Frameworks, No Build Step
 
 (function () {
@@ -25,35 +25,33 @@
   let audioChunks = [];
   let isRecording = false;
   let isSpeaking = false;
-  let currentUtterance = null;
   let vadInterval = null;
   let vadSilenceTimer = null;
   let vadNoSpeechTimer = null;
   let hasDetectedSpeech = false;
   let activeAbortController = null;
-  let lastSentQuery = null;
 
   // ==================== LOCALIZATION DICTIONARY ====================
   const I18N = {
     en: {
       appName: "Bolo",
-      tagline: "Village Help-Desk Volunteer",
+      heroTag: "🌾 Farmer & Village Help-Desk",
+      heroTitle: "Govt Schemes for You & Your Family",
+      heroSub: "Tap the mic at the bottom left to speak in Telugu, Hindi, or English.",
       morningGreeting: "Good morning! I am Bolo, your village help-desk volunteer.",
       afternoonGreeting: "Good afternoon! I am Bolo, your village help-desk volunteer.",
       eveningGreeting: "Good evening! I am Bolo, your village help-desk volunteer.",
       newChat: "New Question",
-      orbIdle: "Tap to talk in your language",
+      orbIdle: "Tap the mic at the bottom left to talk",
       orbListening: "Listening... speak now",
       orbThinking: "Thinking...",
-      orbSpeaking: "Bolo is speaking... tap to stop",
-      stopBolo: "Stop Bolo",
+      orbSpeaking: "Bolo is speaking...",
+      stopVoice: "Stop",
       pickTopic: "Or pick a topic to ask:",
       inputPlaceholder: "Type your question here...",
       listenAgain: "Listen again",
       callHelpline: "Call Helpline (1800-XXX-XXXX)",
       findCSC: "Find Nearest CSC / Mee Seva",
-      askSomethingElse: "Ask something else",
-      talkAgain: "Talk again",
       searchPlaceholder: "Search 130+ schemes (e.g. Kisan, Awas, Health)...",
       allSchemes: "All",
       benefit: "Benefit",
@@ -72,13 +70,13 @@
       emptySaved: "No saved schemes yet. Tap the heart icon on any scheme to save it for quick offline reference.",
       emptyQuestions: "No recent questions asked yet.",
       offlineMsg: "⚠️ You are offline. Please check your internet connection.",
-      wakingMsg: "⏳ Waking up server, one moment please...",
+      wakingMsg: "⏳ Connecting to server, one moment please...",
       voiceUnavailMsg: "ℹ️ Voice audio not installed for this language on your device. Text answer is displayed.",
       micDenied: "Microphone permission was denied. You can still type your questions in the box below.",
       noSpeechHeard: "I did not hear anything. Please tap the mic and try speaking again.",
       networkError: "Connection problem. Please check your network and tap Try Again.",
       tryAgain: "Try Again",
-      welcomeMsg: "Namaste! I am Bolo, your village help-desk volunteer. You can talk to me directly by tapping the mic, or type your question below. How can I help you with government schemes today?",
+      welcomeMsg: "Namaste! I am Bolo, your village help-desk volunteer. You can talk to me directly by tapping the mic at the bottom left, or type your question. How can I help you with government schemes today?",
       navTalk: "Talk",
       navSchemes: "Schemes",
       navSaved: "Saved",
@@ -95,23 +93,23 @@
     },
     hi: {
       appName: "बोलो",
-      tagline: "ग्रामीण सेवा मित्र",
+      heroTag: "🌾 किसान और ग्रामीण सहायता केंद्र",
+      heroTitle: "आपके और आपके परिवार के लिए सरकारी योजनाएं",
+      heroSub: "बोलने के लिए नीचे बाईं ओर दिए गए माइक बटन को दबाएं।",
       morningGreeting: "शुभ प्रभात! मैं बोलो हूँ, आपका ग्रामीण सेवा मित्र।",
       afternoonGreeting: "नमस्ते! मैं बोलो हूँ, आपका ग्रामीण सेवा मित्र।",
       eveningGreeting: "शुभ संध्या! मैं बोलो हूँ, आपका ग्रामीण सेवा मित्र।",
       newChat: "नया प्रश्न",
-      orbIdle: "अपनी भाषा में बात करने के लिए टैप करें",
+      orbIdle: "बोलने के लिए नीचे बाईं ओर माइक दबाएं",
       orbListening: "सुन रहा हूँ... अब बोलिए",
       orbThinking: "सोच रहा हूँ...",
-      orbSpeaking: "बोलो बोल रहा है... रोकने के लिए टैप करें",
-      stopBolo: "बोलो को रोकें",
+      orbSpeaking: "बोलो बोल रहा है...",
+      stopVoice: "रोकें",
       pickTopic: "या किसी विषय पर पूछें:",
       inputPlaceholder: "यहाँ अपना प्रश्न लिखें...",
       listenAgain: "फिर से सुनें",
       callHelpline: "हेल्पलाइन पर कॉल करें (1800-XXX-XXXX)",
       findCSC: "नज़दीकी सीएससी (CSC) खोजें",
-      askSomethingElse: "कुछ और पूछें",
-      talkAgain: "फिर से बोलें",
       searchPlaceholder: "130+ योजनाओं में खोजें (जैसे किसान, आवास, इलाज)...",
       allSchemes: "सभी",
       benefit: "लाभ",
@@ -130,13 +128,13 @@
       emptySaved: "अभी तक कोई योजना सेव नहीं की गई है। किसी भी योजना पर दिल के निशान को दबाकर सेव करें।",
       emptyQuestions: "अभी तक कोई प्रश्न नहीं पूछा गया है।",
       offlineMsg: "⚠️ इंटरनेट बंद है। कृपया अपना कनेक्शन जांचें।",
-      wakingMsg: "⏳ सर्वर शुरू हो रहा है, एक क्षण रुकें...",
+      wakingMsg: "⏳ सर्वर से जुड़ रहे हैं, एक क्षण रुकें...",
       voiceUnavailMsg: "ℹ️ आपके फ़ोन में इस भाषा की आवाज़ उपलब्ध नहीं है। नीचे लिखा हुआ उत्तर देखें।",
       micDenied: "माइक की अनुमति नहीं मिली। आप नीचे दिए गए बॉक्स में टाइप करके पूछ सकते हैं।",
       noSpeechHeard: "मुझे कोई आवाज़ नहीं सुनाई दी। कृपया माइक दबाकर दोबारा बोलें।",
-      networkError: "संपर्क नहीं हो सका। कृपया नेटवर्क जांचें और दोबारा कोशिश करें।",
+      networkError: "संपर्क नहीं हो सका। कृपया दोबारा कोशिश करें।",
       tryAgain: "फिर से कोशिश करें",
-      welcomeMsg: "नमस्ते! मैं बोलो हूँ, आपका ग्रामीण सेवा मित्र। आप माइक दबाकर सीधे मुझसे बात कर सकते हैं, या नीचे अपना सवाल लिख सकते हैं। सरकारी योजनाओं के बारे में मैं आपकी क्या मदद करूँ?",
+      welcomeMsg: "नमस्ते! मैं बोलो हूँ, आपका ग्रामीण सेवा मित्र। आप नीचे बाईं ओर माइक दबाकर सीधे मुझसे बात कर सकते हैं, या अपना सवाल लिख सकते हैं। सरकारी योजनाओं के बारे में मैं आपकी क्या मदद करूँ?",
       navTalk: "बात करें",
       navSchemes: "योजनाएं",
       navSaved: "सेव किए गए",
@@ -153,23 +151,23 @@
     },
     te: {
       appName: "బోలో",
-      tagline: "గ్రామ సహాయక మిత్రుడు",
+      heroTag: "🌾 రైతు & గ్రామీణ సహాయ కేంద్రం",
+      heroTitle: "మీకు మరియు మీ కుటుంబానికి ప్రభుత్వ పథకాలు",
+      heroSub: "మాట్లాడటానికి కింద ఎడమవైపు ఉన్న మైక్ బటన్‌ను తాకండి.",
       morningGreeting: "శుభోదయం! నేను బోలోను, మీ గ్రామ సహాయకుడిని.",
       afternoonGreeting: "నమస్కారం! నేను బోలోను, మీ గ్రామ సహాయకుడిని.",
       eveningGreeting: "శుభ సాయంత్రం! నేను బోలోను, మీ గ్రామ సహాయకుడిని.",
       newChat: "కొత్త ప్రశ్న",
-      orbIdle: "మాట్లాడటానికి తాకండి",
+      orbIdle: "మాట్లాడటానికి కింద ఎడమవైపు మైక్ తాకండి",
       orbListening: "వింటున్నాను... మాట్లాడండి",
       orbThinking: "ఆలోచిస్తున్నాను...",
-      orbSpeaking: "బోలో మాట్లాడుతున్నారు... ఆపడానికి తాకండి",
-      stopBolo: "ఆపండి",
+      orbSpeaking: "బోలో మాట్లాడుతున్నారు...",
+      stopVoice: "ఆపండి",
       pickTopic: "లేదా ఒక పథకం గురించి అడగండి:",
       inputPlaceholder: "ఇక్కడ టైప్ చేయండి...",
       listenAgain: "మళ్ళీ వినండి",
       callHelpline: "హెల్ప్‌లైన్‌కు కాల్ చేయండి (1800-XXX-XXXX)",
       findCSC: "మీ సేవ / CSC కేంద్రాన్ని కనుగొనండి",
-      askSomethingElse: "మరొకటి అడగండి",
-      talkAgain: "మళ్ళీ మాట్లాడండి",
       searchPlaceholder: "130+ పథకాల్లో వెతకండి (ఉదా: కిసాన్, ఆవాస్, ఆరోగ్యం)...",
       allSchemes: "అన్నీ",
       benefit: "లభించే ప్రయోజనం",
@@ -188,13 +186,13 @@
       emptySaved: "ఇంకా ఏ పథకాలు సేవ్ చేయలేదు. ఏదైనా పథకంపై గుండె గుర్తును నొక్కి సేవ్ చేసుకోండి.",
       emptyQuestions: "ఇంకా ప్రశ్నలు ఏమీ అడగలేదు.",
       offlineMsg: "⚠️ ఇంటర్నెట్ కనెక్షన్ లేదు. దయచేసి నెట్‌వర్క్ తనిఖీ చేయండి.",
-      wakingMsg: "⏳ సర్వర్ కనెక్ట్ అవుతోంది, ఒక్క నిమిషం వేచి ఉండండి...",
+      wakingMsg: "⏳ సర్వర్‌కు కనెక్ట్ అవుతోంది, ఒక్క నిమిషం వేచి ఉండండి...",
       voiceUnavailMsg: "ℹ️ మీ ఫోన్‌లో ఈ భాషా వాయిస్ లేదు. సమాధానం కింద వచన రూపంలో కనిపిస్తుంది.",
       micDenied: "మైక్రోఫోన్ అనుమతి రాలేదు. కింద ఉన్న బాక్స్‌లో టైప్ చేసి అడగవచ్చు.",
       noSpeechHeard: "నాకు మాటలు వినిపించలేదు. దయచేసి మైక్ తాకి మళ్ళీ మాట్లాడండి.",
-      networkError: "కనెక్ట్ కాలేకపోయాము. దయచేసి నెట్‌వర్క్ చూసి మళ్ళీ ప్రయత్నించండి.",
+      networkError: "కనెక్ట్ కాలేకపోయాము. దయచేసి మళ్ళీ ప్రయత్నించండి.",
       tryAgain: "మళ్ళీ ప్రయత్నించండి",
-      welcomeMsg: "నమస్కారం! నేను బోలోను, మీ గ్రామ సహాయకుడిని. మీరు మైక్ తాకి నాతో నేరుగా మాట్లాడవచ్చు, లేదా కింద మీ ప్రశ్నను టైప్ చేయవచ్చు. ప్రభుత్వ పథకాల గురించి నేను మీకు ఎలా సహాయపడగలను?",
+      welcomeMsg: "నమస్కారం! నేను బోలోను, మీ గ్రామ సహాయకుడిని. మీరు కింద ఎడమవైపు మైక్ తాకి నాతో మాట్లాడవచ్చు, లేదా ప్రశ్నను టైప్ చేయవచ్చు. ప్రభుత్వ పథకాల గురించి నేను మీకు ఎలా సహాయపడగలను?",
       navTalk: "మాట్లాడండి",
       navSchemes: "పథకాలు",
       navSaved: "సేవ్ చేసినవి",
@@ -223,6 +221,11 @@
     lblNewChat: document.getElementById("lbl-new-chat"),
     langBtns: document.querySelectorAll(".lang-btn"),
     
+    // Farmer Hero Card
+    lblHeroTag: document.getElementById("lbl-hero-tag"),
+    lblHeroTitle: document.getElementById("lbl-hero-title"),
+    lblHeroSub: document.getElementById("lbl-hero-sub"),
+
     // Banners
     bannerOffline: document.getElementById("banner-offline"),
     bannerWaking: document.getElementById("banner-waking"),
@@ -241,11 +244,14 @@
     navLblSchemes: document.getElementById("nav-lbl-schemes"),
     navLblSaved: document.getElementById("nav-lbl-saved"),
 
-    // Orb & Talk
-    orbWrapper: document.getElementById("orb-wrapper"),
-    orbStatus: document.getElementById("orb-status"),
-    btnStopSpeaking: document.getElementById("btn-stop-speaking"),
-    lblStopVoice: document.getElementById("lbl-stop-voice"),
+    // Voice & Mic Elements
+    btnLeftMic: document.getElementById("btn-left-mic"),
+    voiceStatusBar: document.getElementById("voice-status-bar"),
+    voiceStatusText: document.getElementById("voice-status-text"),
+    btnStatusStop: document.getElementById("btn-status-stop"),
+    lblStatusStop: document.getElementById("lbl-status-stop"),
+
+    // Chat
     starterTilesContainer: document.getElementById("starter-tiles-container"),
     lblStarterTopics: document.getElementById("lbl-starter-topics"),
     chatMessages: document.getElementById("chat-messages"),
@@ -302,7 +308,7 @@
     registerServiceWorker();
     checkNetworkStatus();
 
-    // Initial welcome voice trigger setup
+    // Initial welcome voice trigger
     document.querySelectorAll(".welcome-listen-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         bargeIn();
@@ -311,7 +317,6 @@
     });
   }
 
-  // Determine greeting based on current time
   function getTimeGreeting() {
     const hour = new Date().getHours();
     const t = getT();
@@ -321,10 +326,7 @@
   }
 
   function updateEffectiveLanguage() {
-    if (currentLang === "auto") {
-      // Keep effectiveLang as previously detected or default to Telugu or English
-      // If user hasn't set anything, start with English/Telugu friendly
-    } else {
+    if (currentLang !== "auto") {
       effectiveLang = currentLang;
     }
   }
@@ -333,7 +335,9 @@
     const t = getT();
     dom.headerGreeting.textContent = getTimeGreeting();
     dom.lblNewChat.textContent = t.newChat;
-    dom.lblStopVoice.textContent = t.stopBolo;
+    dom.lblHeroTag.textContent = t.heroTag;
+    dom.lblHeroTitle.textContent = t.heroTitle;
+    dom.lblHeroSub.textContent = t.heroSub;
     dom.lblStarterTopics.textContent = t.pickTopic;
     dom.chatTextInput.placeholder = t.inputPlaceholder;
     dom.schemesSearchInput.placeholder = t.searchPlaceholder;
@@ -345,11 +349,8 @@
     dom.navLblTalk.textContent = t.navTalk;
     dom.navLblSchemes.textContent = t.navSchemes;
     dom.navLblSaved.textContent = t.navSaved;
+    dom.lblStatusStop.textContent = t.stopVoice;
     dom.welcomeBubbleMsg.textContent = t.welcomeMsg;
-
-    if (dom.orbWrapper.classList.contains("state-idle")) {
-      dom.orbStatus.textContent = t.orbIdle;
-    }
 
     renderStarterTiles();
   }
@@ -425,7 +426,6 @@
   // ==================== CHAT & CONVERSATION ====================
   function resetConversation() {
     conversationHistory = [];
-    // Keep only the first welcome bubble
     const rows = dom.chatMessages.querySelectorAll(".chat-row");
     for (let i = 1; i < rows.length; i++) {
       rows[i].remove();
@@ -443,9 +443,9 @@
       avatarDiv.setAttribute("aria-hidden", "true");
       avatarDiv.innerHTML = `
         <svg viewBox="0 0 512 512" width="100%" height="100%">
-          <circle cx="256" cy="256" r="240" fill="#2f4a9e"/>
+          <circle cx="256" cy="256" r="240" fill="#1a7940"/>
           <circle cx="256" cy="245" r="70" fill="#fbd5b5"/>
-          <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#f08a24"/>
+          <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#2eb868"/>
           <circle cx="234" cy="240" r="6" fill="#3c2415"/>
           <circle cx="278" cy="240" r="6" fill="#3c2415"/>
           <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
@@ -465,7 +465,6 @@
     textDiv.textContent = text;
     bubble.appendChild(textDiv);
 
-    // Bolo Actions
     if (role === "bolo") {
       const footer = document.createElement("div");
       footer.className = "bubble-footer";
@@ -549,7 +548,6 @@
         const retryBtn = document.createElement("button");
         retryBtn.type = "button";
         retryBtn.className = "option-btn";
-        retryBtn.style.background = "var(--primary)";
         retryBtn.textContent = `🔄 ${getT().tryAgain}`;
         retryBtn.addEventListener("click", () => {
           bargeIn();
@@ -563,12 +561,9 @@
 
     row.appendChild(bubble);
     dom.chatMessages.appendChild(row);
-
-    // Scroll chat into view
     row.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  // Save to recent questions list
   function saveRecentQuestion(q) {
     if (!q || !q.trim()) return;
     try {
@@ -578,7 +573,7 @@
       if (list.length > 10) list = list.slice(0, 10);
       localStorage.setItem("bolo_recent_questions", JSON.stringify(list));
     } catch (e) {
-      console.warn("Could not save question to localStorage:", e);
+      console.warn("Could not save question:", e);
     }
   }
 
@@ -588,28 +583,22 @@
 
     bargeIn();
     const cleanText = questionText.trim();
-    lastSentQuery = cleanText;
     saveRecentQuestion(cleanText);
 
-    // Render user speech bubble
     appendChatBubble("user", cleanText);
 
-    // Update conversation history
     conversationHistory.push({
       role: "user",
       text: cleanText,
       kind: "question"
     });
 
-    // Set UI to thinking
-    setOrbState("thinking");
+    setVoiceUIState("thinking");
     showWakingBannerTimer();
 
     activeAbortController = new AbortController();
     const timeoutId = setTimeout(() => {
-      if (activeAbortController) {
-        activeAbortController.abort();
-      }
+      if (activeAbortController) activeAbortController.abort();
     }, 25000);
 
     try {
@@ -627,23 +616,18 @@
       clearTimeout(timeoutId);
       hideWakingBanner();
 
-      if (!resp.ok) {
-        throw new Error(`Server returned HTTP ${resp.status}`);
-      }
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
       const data = await resp.json();
       handleBoloResponse(data);
     } catch (err) {
       clearTimeout(timeoutId);
       hideWakingBanner();
-      setOrbState("idle");
+      setVoiceUIState("idle");
 
-      if (err.name === "AbortError") {
-        console.log("Request was aborted (barge-in or timeout).");
-        return;
-      }
+      if (err.name === "AbortError") return;
 
-      console.error("Error communicating with Bolo backend:", err);
+      console.error("Error communicating with backend:", err);
       appendChatBubble("bolo", getT().networkError, {
         type: "unknown",
         isError: true,
@@ -655,14 +639,12 @@
 
   async function handleVoiceAudioUpload(audioBlob) {
     bargeIn();
-    setOrbState("thinking");
+    setVoiceUIState("thinking");
     showWakingBannerTimer();
 
     activeAbortController = new AbortController();
     const timeoutId = setTimeout(() => {
-      if (activeAbortController) {
-        activeAbortController.abort();
-      }
+      if (activeAbortController) activeAbortController.abort();
     }, 25000);
 
     try {
@@ -681,13 +663,10 @@
       clearTimeout(timeoutId);
       hideWakingBanner();
 
-      if (!resp.ok) {
-        throw new Error(`Server returned HTTP ${resp.status}`);
-      }
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
       const data = await resp.json();
       
-      // If voice was transcribed, show user bubble with what was heard
       if (data.transcript && data.transcript.trim()) {
         appendChatBubble("user", data.transcript);
         saveRecentQuestion(data.transcript);
@@ -702,32 +681,22 @@
     } catch (err) {
       clearTimeout(timeoutId);
       hideWakingBanner();
-      setOrbState("idle");
+      setVoiceUIState("idle");
 
-      if (err.name === "AbortError") {
-        console.log("Voice request was aborted.");
-        return;
-      }
+      if (err.name === "AbortError") return;
 
       console.error("Voice upload error:", err);
-      appendChatBubble("bolo", getT().networkError, {
-        type: "unknown",
-        isError: true
-      });
+      appendChatBubble("bolo", getT().networkError, { type: "unknown", isError: true });
       speakText(getT().networkError, effectiveLang);
     }
   }
 
   function handleBoloResponse(data) {
-    // If backend detected language and we are in auto mode, update effective language
     if (data.lang && ["en", "hi", "te"].includes(data.lang)) {
       effectiveLang = data.lang;
-      if (currentLang === "auto") {
-        updateUIStrings();
-      }
+      if (currentLang === "auto") updateUIStrings();
     }
 
-    // Append Bolo chat bubble
     appendChatBubble("bolo", data.text, {
       type: data.type,
       options: data.options,
@@ -735,17 +704,13 @@
       lang: effectiveLang
     });
 
-    // Save to conversation history
     conversationHistory.push({
       role: "bolo",
       text: data.text,
       kind: data.type === "question" ? "question" : "answer"
     });
 
-    // Speak response
     speakText(data.text, effectiveLang, () => {
-      // Callback after speaking completes:
-      // CONVERSATION MODE: If Bolo asked a question, auto-start listening!
       if (data.type === "question") {
         setTimeout(() => {
           if (!isSpeaking && activeTab === "talk") {
@@ -756,7 +721,6 @@
     });
   }
 
-  // Waking server banner (triggers if server takes > 4s)
   let wakingTimer = null;
   function showWakingBannerTimer() {
     clearTimeout(wakingTimer);
@@ -770,18 +734,24 @@
     dom.bannerWaking.classList.remove("active");
   }
 
-  // ==================== VOICE / AUDIO & VAD ENGINE ====================
-  function setOrbState(state) {
-    dom.orbWrapper.className = `orb-container state-${state}`;
+  // ==================== VOICE / AUDIO & VAD (MIC AT LEFT BOTTOM) ====================
+  function setVoiceUIState(state) {
     const t = getT();
     if (state === "idle") {
-      dom.orbStatus.textContent = t.orbIdle;
+      dom.btnLeftMic.classList.remove("recording");
+      dom.voiceStatusBar.classList.remove("active");
     } else if (state === "listening") {
-      dom.orbStatus.textContent = t.orbListening;
+      dom.btnLeftMic.classList.add("recording");
+      dom.voiceStatusBar.classList.add("active");
+      dom.voiceStatusText.textContent = t.orbListening;
     } else if (state === "thinking") {
-      dom.orbStatus.textContent = t.orbThinking;
+      dom.btnLeftMic.classList.remove("recording");
+      dom.voiceStatusBar.classList.add("active");
+      dom.voiceStatusText.textContent = t.orbThinking;
     } else if (state === "speaking") {
-      dom.orbStatus.textContent = t.orbSpeaking;
+      dom.btnLeftMic.classList.remove("recording");
+      dom.voiceStatusBar.classList.add("active");
+      dom.voiceStatusText.textContent = t.orbSpeaking;
     }
   }
 
@@ -798,21 +768,15 @@
       });
       microphoneStream = stream;
 
-      // Initialize Web Audio Context for live mic visualization & VAD
       const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      if (!audioContext) {
-        audioContext = new AudioCtx();
-      }
-      if (audioContext.state === "suspended") {
-        await audioContext.resume();
-      }
+      if (!audioContext) audioContext = new AudioCtx();
+      if (audioContext.state === "suspended") await audioContext.resume();
 
       const sourceNode = audioContext.createMediaStreamSource(stream);
       analyserNode = audioContext.createAnalyser();
       analyserNode.fftSize = 256;
       sourceNode.connect(analyserNode);
 
-      // Pick supported mimeType (webm or mp4 for Safari)
       let mimeType = "audio/webm;codecs=opus";
       if (!MediaRecorder.isTypeSupported(mimeType)) {
         mimeType = MediaRecorder.isTypeSupported("audio/webm")
@@ -825,9 +789,7 @@
       hasDetectedSpeech = false;
 
       mediaRecorder.ondataavailable = (e) => {
-        if (e.data && e.data.size > 0) {
-          audioChunks.push(e.data);
-        }
+        if (e.data && e.data.size > 0) audioChunks.push(e.data);
       };
 
       mediaRecorder.onstop = () => {
@@ -836,21 +798,20 @@
           const recordedBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType || "audio/webm" });
           handleVoiceAudioUpload(recordedBlob);
         } else {
-          setOrbState("idle");
+          setVoiceUIState("idle");
           announceAria(getT().noSpeechHeard);
         }
       };
 
       mediaRecorder.start(200);
       isRecording = true;
-      setOrbState("listening");
+      setVoiceUIState("listening");
 
-      // VAD Monitoring Loop
       setupVAD();
 
     } catch (err) {
       console.error("Microphone access error:", err);
-      setOrbState("idle");
+      setVoiceUIState("idle");
       alert(getT().micDenied);
     }
   }
@@ -876,43 +837,27 @@
   function setupVAD() {
     const dataArray = new Uint8Array(analyserNode.frequencyBinCount);
     let silenceStart = null;
-    const speechThreshold = 22; // RMS noise gate
-    const silenceDuration = 1600; // ms of silence before auto-stop
+    const speechThreshold = 22;
+    const silenceDuration = 1600;
 
-    // 8s absolute silence timeout: if user didn't speak at all
     vadNoSpeechTimer = setTimeout(() => {
       if (!hasDetectedSpeech && isRecording) {
-        console.log("No speech detected after 8s.");
         stopVoiceRecording();
         alert(getT().noSpeechHeard);
       }
     }, 8000);
 
-    // 25s max recording safety limit
     setTimeout(() => {
-      if (isRecording) {
-        console.log("Max duration 25s reached. Stopping recording.");
-        stopVoiceRecording();
-      }
+      if (isRecording) stopVoiceRecording();
     }, 25000);
 
     vadInterval = setInterval(() => {
       if (!analyserNode || !isRecording) return;
       analyserNode.getByteFrequencyData(dataArray);
 
-      // Calculate simple average amplitude
       let sum = 0;
-      for (let i = 0; i < dataArray.length; i++) {
-        sum += dataArray[i];
-      }
+      for (let i = 0; i < dataArray.length; i++) sum += dataArray[i];
       const average = sum / dataArray.length;
-
-      // Live visual ripple scale reacting to voice level
-      const ripple1 = document.querySelector(".orb-ripple-1");
-      if (ripple1) {
-        const scale = 1.0 + Math.min(average / 45, 0.6);
-        ripple1.style.transform = `scale(${scale})`;
-      }
 
       if (average > speechThreshold) {
         hasDetectedSpeech = true;
@@ -922,7 +867,6 @@
           if (!silenceStart) {
             silenceStart = Date.now();
           } else if (Date.now() - silenceStart > silenceDuration) {
-            console.log("VAD auto-stop triggered after user finished speaking.");
             stopVoiceRecording();
           }
         }
@@ -937,10 +881,7 @@
       return;
     }
 
-    // Cancel any active speech
     window.speechSynthesis.cancel();
-
-    // Clean markdown/symbols from speech
     const cleanSpoken = textToSpeak.replace(/[*#_`]/g, "").trim();
     if (!cleanSpoken) {
       if (onCompleteCallback) onCompleteCallback();
@@ -948,24 +889,17 @@
     }
 
     const utterance = new SpeechSynthesisUtterance(cleanSpoken);
-    currentUtterance = utterance;
-
-    // Resolve voice language
     const langTag = langCode === "te" ? "te-IN" : (langCode === "hi" ? "hi-IN" : "en-IN");
     utterance.lang = langTag;
-    utterance.rate = 0.95; // Slightly slower, clear village volunteer cadence
+    utterance.rate = 0.95;
     utterance.pitch = 1.0;
 
-    // Find best installed voice
     const voices = window.speechSynthesis.getVoices();
     let bestVoice = voices.find((v) => v.lang.replace("_", "-") === langTag);
-    if (!bestVoice) {
-      bestVoice = voices.find((v) => v.lang.startsWith(langCode));
-    }
+    if (!bestVoice) bestVoice = voices.find((v) => v.lang.startsWith(langCode));
     if (bestVoice) {
       utterance.voice = bestVoice;
     } else {
-      // Check if neither voice nor lang matches
       if (langCode === "te" && !voices.some((v) => v.lang.includes("te"))) {
         dom.bannerVoiceUnavail.classList.add("active");
         setTimeout(() => dom.bannerVoiceUnavail.classList.remove("active"), 5000);
@@ -974,30 +908,26 @@
 
     utterance.onstart = () => {
       isSpeaking = true;
-      setOrbState("speaking");
+      setVoiceUIState("speaking");
     };
 
     utterance.onend = () => {
       isSpeaking = false;
-      setOrbState("idle");
+      setVoiceUIState("idle");
       if (onCompleteCallback) onCompleteCallback();
     };
 
-    utterance.onerror = (e) => {
-      console.warn("Speech synthesis error:", e);
+    utterance.onerror = () => {
       isSpeaking = false;
-      setOrbState("idle");
+      setVoiceUIState("idle");
       if (onCompleteCallback) onCompleteCallback();
     };
 
     window.speechSynthesis.speak(utterance);
   }
 
-  // BARGE-IN: Instantly cancel TTS and abort active network requests
   function bargeIn() {
-    if (window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-    }
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
     isSpeaking = false;
 
     if (activeAbortController) {
@@ -1005,12 +935,10 @@
       activeAbortController = null;
     }
 
-    if (isRecording) {
-      stopVoiceRecording();
-    }
+    if (isRecording) stopVoiceRecording();
 
     hideWakingBanner();
-    setOrbState("idle");
+    setVoiceUIState("idle");
   }
 
   // ==================== SCHEMES BROWSER & BOTTOM SHEET ====================
@@ -1047,7 +975,6 @@
   function renderCategoryFilterChips() {
     dom.categoriesFilterScroll.replaceChildren();
 
-    // "All" chip
     const allBtn = document.createElement("button");
     allBtn.type = "button";
     allBtn.className = `cat-filter-btn ${selectedCategoryFilter === "all" ? "active" : ""}`;
@@ -1075,23 +1002,6 @@
     });
   }
 
-  function getCategoryColorClass(catName) {
-    if (!catName) return "other";
-    const low = catName.toLowerCase();
-    if (low.includes("farmer")) return "farmers";
-    if (low.includes("health")) return "health";
-    if (low.includes("women") || low.includes("child")) return "women";
-    if (low.includes("student")) return "students";
-    if (low.includes("pension") || low.includes("senior")) return "pension";
-    if (low.includes("housing")) return "housing";
-    if (low.includes("job") || low.includes("skill")) return "jobs";
-    if (low.includes("loan") || low.includes("business")) return "loans";
-    if (low.includes("insurance")) return "insurance";
-    if (low.includes("disability")) return "disability";
-    if (low.includes("village")) return "village";
-    return "other";
-  }
-
   function renderSchemesList() {
     dom.schemesCardsList.replaceChildren();
 
@@ -1114,7 +1024,7 @@
       topRow.className = "card-top";
 
       const catTag = document.createElement("span");
-      catTag.className = `cat-tag ${getCategoryColorClass(s.category)}`;
+      catTag.className = "cat-tag";
       catTag.textContent = s.category;
       topRow.appendChild(catTag);
 
@@ -1157,8 +1067,6 @@
       const s = await resp.json();
       activeSchemeDetail = s;
 
-      // Populate bottom sheet fields safely
-      dom.sheetCatBadge.className = `cat-tag ${getCategoryColorClass(s.category)}`;
       dom.sheetCatBadge.textContent = s.category;
       dom.sheetSchemeTitle.textContent = s.scheme_name;
       dom.sheetVerifiedDate.textContent = s.source_and_verification_date || "Verified 2026";
@@ -1170,13 +1078,9 @@
       dom.sheetApplyContent.textContent = s.application_process;
       dom.sheetOfficialUrl.href = s.application_url || "#";
 
-      // Render interactive documents checklist
       renderDocumentsChecklist(s.id, s.documents || []);
-
-      // Check bookmark status
       updateSaveButtonUI(s.id);
 
-      // Setup actions
       dom.sheetBtnAsk.onclick = () => {
         closeBottomSheet();
         switchTab("talk");
@@ -1193,13 +1097,11 @@
         toggleSaveScheme(s);
       };
 
-      // WhatsApp share link
       const shareText = encodeURIComponent(
         `🏛️ *${s.scheme_name}*\n💰 Benefit: ${s.benefits_money}\n🔗 Official Portal: ${s.application_url}\n(Shared from Bolo App)`
       );
       dom.sheetBtnWhatsapp.href = `https://wa.me/?text=${shareText}`;
 
-      // Show bottom sheet
       dom.bottomSheetBackdrop.classList.add("active");
       dom.bottomSheetBackdrop.setAttribute("aria-hidden", "false");
     } catch (e) {
@@ -1228,7 +1130,7 @@
       return;
     }
 
-    docsList.forEach((docName, idx) => {
+    docsList.forEach((docName) => {
       const itemLabel = document.createElement("label");
       itemLabel.className = "checklist-item";
 
@@ -1255,7 +1157,7 @@
     });
   }
 
-  // ==================== SAVED SCHEMES (BOOKMARKS) ====================
+  // ==================== SAVED SCHEMES ====================
   function getSavedSchemes() {
     try {
       return JSON.parse(localStorage.getItem("bolo_saved_schemes") || "[]");
@@ -1297,7 +1199,6 @@
   }
 
   function renderSavedScreen() {
-    // 1. Saved Schemes
     const saved = getSavedSchemes();
     dom.savedSchemesContainer.replaceChildren();
 
@@ -1315,7 +1216,7 @@
         topRow.className = "card-top";
 
         const catTag = document.createElement("span");
-        catTag.className = `cat-tag ${getCategoryColorClass(s.category)}`;
+        catTag.className = "cat-tag";
         catTag.textContent = s.category;
 
         const removeBtn = document.createElement("button");
@@ -1348,7 +1249,6 @@
       });
     }
 
-    // 2. Recent Questions
     let questions = [];
     try {
       questions = JSON.parse(localStorage.getItem("bolo_recent_questions") || "[]");
@@ -1384,24 +1284,21 @@
 
   // ==================== EVENT LISTENERS ====================
   function setupEventListeners() {
-    // Language buttons
     dom.langBtns.forEach((btn) => {
       btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
     });
 
-    // Navigation Tabs
     dom.tabBtnTalk.addEventListener("click", () => switchTab("talk"));
     dom.tabBtnSchemes.addEventListener("click", () => switchTab("schemes"));
     dom.tabBtnSaved.addEventListener("click", () => switchTab("saved"));
 
-    // Reset Chat
     dom.btnNewChat.addEventListener("click", () => {
       bargeIn();
       resetConversation();
     });
 
-    // Voice Orb Click
-    dom.orbWrapper.addEventListener("click", () => {
+    // 🎙️ MIC AT BOTTOM LEFT LISTENER
+    dom.btnLeftMic.addEventListener("click", () => {
       if (isSpeaking) {
         bargeIn();
         return;
@@ -1413,12 +1310,11 @@
       }
     });
 
-    // Stop Bolo Button
-    dom.btnStopSpeaking.addEventListener("click", () => {
+    // Stop speaking/listening button in status bar
+    dom.btnStatusStop.addEventListener("click", () => {
       bargeIn();
     });
 
-    // Chat text input send
     dom.btnSendText.addEventListener("click", () => {
       const val = dom.chatTextInput.value;
       if (val && val.trim()) {
@@ -1434,12 +1330,10 @@
       }
     });
 
-    // Barge-in when user focuses or types in the text input
     dom.chatTextInput.addEventListener("focus", () => {
       if (isSpeaking) bargeIn();
     });
 
-    // Search Schemes input
     let searchDebounce = null;
     dom.schemesSearchInput.addEventListener("input", (e) => {
       clearTimeout(searchDebounce);
@@ -1448,7 +1342,6 @@
       }, 300);
     });
 
-    // Clear Recent Questions
     dom.btnClearQuestions.addEventListener("click", () => {
       try {
         localStorage.removeItem("bolo_recent_questions");
@@ -1456,15 +1349,11 @@
       } catch (e) {}
     });
 
-    // Bottom Sheet Close
     dom.btnCloseSheet.addEventListener("click", closeBottomSheet);
     dom.bottomSheetBackdrop.addEventListener("click", (e) => {
-      if (e.target === dom.bottomSheetBackdrop) {
-        closeBottomSheet();
-      }
+      if (e.target === dom.bottomSheetBackdrop) closeBottomSheet();
     });
 
-    // Escape key closes modal
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && dom.bottomSheetBackdrop.classList.contains("active")) {
         closeBottomSheet();
@@ -1472,7 +1361,6 @@
     });
   }
 
-  // Network offline / online banner
   function checkNetworkStatus() {
     function updateOnlineStatus() {
       if (!navigator.onLine) {
@@ -1486,17 +1374,15 @@
     updateOnlineStatus();
   }
 
-  // Service Worker Registration for PWA
   function registerServiceWorker() {
     if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
       navigator.serviceWorker
         .register("./sw.js")
         .then(() => console.log("Bolo Service Worker Registered"))
-        .catch((err) => console.log("Service Worker registration skipped:", err));
+        .catch((err) => console.log("Service Worker skipped:", err));
     }
   }
 
-  // Run app on DOM load
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Bolo - Voice Help-Desk for Government Schemes</title>
-  <meta name="description" content="Voice-first assistant helping rural and semi-urban Indian citizens discover government welfare schemes in their own language.">
+  <meta name="description" content="Voice-first assistant helping rural and semi-urban Indian farmers and citizens discover government welfare schemes in their own language.">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2f4a9e">
+  <meta name="theme-color" content="#1a7940">
   <link rel="icon" type="image/svg+xml" href="icon.svg">
   <link rel="apple-touch-icon" href="icon.svg">
   <link rel="stylesheet" href="styles.css">
@@ -16,23 +16,24 @@
   <div id="aria-status" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;" aria-live="polite" aria-atomic="true"></div>
 
   <div class="app-container">
-    <!-- Top App Header -->
+    <!-- Top App Header (White & Green) -->
     <header class="app-header">
       <div class="header-top">
         <div class="brand-wrapper">
           <div class="brand-avatar" aria-hidden="true">
             <svg viewBox="0 0 512 512" width="100%" height="100%">
-              <circle cx="256" cy="256" r="240" fill="#2f4a9e"/>
+              <circle cx="256" cy="256" r="240" fill="#1a7940"/>
               <circle cx="256" cy="245" r="70" fill="#fbd5b5"/>
-              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#f08a24"/>
-              <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
+              <!-- Green Pagri / Turban for Farmer Helper -->
+              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#2eb868"/>
               <circle cx="234" cy="240" r="6" fill="#3c2415"/>
               <circle cx="278" cy="240" r="6" fill="#3c2415"/>
+              <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
             </svg>
           </div>
           <div class="brand-title">
             <span>Bolo</span>
-            <span class="brand-badge">బోలో • बोलो</span>
+            <span class="brand-badge">రైతు • किसान</span>
           </div>
         </div>
 
@@ -68,26 +69,43 @@
 
     <!-- ==================== SCREEN 1: TALK (HOME) ==================== -->
     <main id="screen-talk" class="screen talk-screen active">
-      <!-- Voice Orb Section -->
-      <section class="orb-section" aria-label="Voice conversation orb">
-        <div id="orb-wrapper" class="orb-container state-idle" tabindex="0" role="button" aria-label="Microphone button: Tap to talk">
-          <div class="orb-ripple orb-ripple-1"></div>
-          <div class="orb-ripple orb-ripple-2"></div>
-          
-          <div class="voice-orb">
-            <!-- Mic Icon -->
-            <svg id="icon-mic" class="orb-icon" viewBox="0 0 24 24">
-              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
-              <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
-            </svg>
-          </div>
+      <!-- Farmer Hero Graphic Card -->
+      <section class="farmer-hero-card" aria-label="Village helpdesk banner">
+        <div class="farmer-illustration-box">
+          <!-- Indian Farmer & Agricultural Field Vector Artwork -->
+          <svg viewBox="0 0 120 120" width="100%" height="100%">
+            <!-- Sky & Sun -->
+            <rect width="120" height="120" fill="#e8f7ee"/>
+            <circle cx="95" cy="35" r="16" fill="#fcd34d" opacity="0.8"/>
+            <!-- Green Hills / Agricultural Farmland -->
+            <path d="M 0 85 Q 40 60 80 80 Q 100 70 120 90 L 120 120 L 0 120 Z" fill="#2eb868"/>
+            <path d="M 0 95 Q 50 80 120 100 L 120 120 L 0 120 Z" fill="#1a7940"/>
+            <!-- Crops/Wheat Sheaves in Field -->
+            <path d="M 15 105 L 18 90 M 18 90 L 15 85 M 18 90 L 22 86" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 28 108 L 30 92 M 30 92 L 27 87 M 30 92 L 34 88" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 102 110 L 105 95 M 105 95 L 101 90 M 105 95 L 109 91" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Farmer Character (Indian Farmer with Turban/Pagri & Kurta) -->
+            <!-- Torso -->
+            <path d="M 45 120 C 45 92 55 86 65 86 C 75 86 85 92 85 120 Z" fill="#ffffff"/>
+            <!-- Green Angavastram / Cloth Over Shoulder -->
+            <path d="M 50 96 Q 65 110 80 96 L 76 120 L 54 120 Z" fill="#1a7940"/>
+            <!-- Head -->
+            <circle cx="65" cy="68" r="14" fill="#fbd5b5"/>
+            <!-- Pagri (Saffron / Orange Traditional Farmer Turban) -->
+            <path d="M 50 63 C 48 50 56 42 65 42 C 74 42 82 50 80 63 C 75 60 70 59 65 59 C 60 59 55 60 50 63 Z" fill="#f97316"/>
+            <!-- Smile & Eyes -->
+            <circle cx="60" cy="67" r="1.5" fill="#3c2415"/>
+            <circle cx="70" cy="67" r="1.5" fill="#3c2415"/>
+            <path d="M 61 74 Q 65 78 69 74" fill="none" stroke="#3c2415" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Pagri Tail Fold -->
+            <path d="M 76 56 Q 84 62 82 75" fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+          </svg>
         </div>
-
-        <div id="orb-status" class="orb-status-badge">Tap to talk in your language</div>
-        
-        <button type="button" id="btn-stop-speaking" class="orb-stop-btn">
-          ⏹️ <span id="lbl-stop-voice">Stop Bolo</span>
-        </button>
+        <div class="farmer-hero-info">
+          <div class="farmer-hero-tag" id="lbl-hero-tag">🌾 Kisan & Gramin Seva</div>
+          <div class="farmer-hero-title" id="lbl-hero-title">Govt Schemes for You & Your Family</div>
+          <div class="farmer-hero-sub" id="lbl-hero-sub">Tap the mic at the bottom left to speak in Telugu, Hindi, or English.</div>
+        </div>
       </section>
 
       <!-- Topic Starter Tiles -->
@@ -104,9 +122,9 @@
         <div class="chat-row bolo">
           <div class="bubble-avatar" aria-hidden="true">
             <svg viewBox="0 0 512 512" width="100%" height="100%">
-              <circle cx="256" cy="256" r="240" fill="#2f4a9e"/>
+              <circle cx="256" cy="256" r="240" fill="#1a7940"/>
               <circle cx="256" cy="245" r="70" fill="#fbd5b5"/>
-              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#f08a24"/>
+              <path d="M 186 215 C 180 160, 215 130, 256 130 C 297 130, 332 160, 326 215 Z" fill="#2eb868"/>
               <circle cx="234" cy="240" r="6" fill="#3c2415"/>
               <circle cx="278" cy="240" r="6" fill="#3c2415"/>
               <path d="M 234 270 Q 256 295 278 270" fill="none" stroke="#683416" stroke-width="5" stroke-linecap="round"/>
@@ -114,7 +132,7 @@
           </div>
           <div class="bubble bolo-bubble">
             <div class="bubble-text" id="welcome-bubble-msg">
-              Namaste! I am Bolo, your village help-desk volunteer. You can talk to me directly by tapping the mic, or type your question below. How can I help you with government schemes today?
+              Namaste! I am Bolo, your village help-desk volunteer. You can talk to me directly by tapping the mic at the bottom left, or type your question. How can I help you with government schemes today?
             </div>
             <div class="bubble-footer">
               <div class="bubble-tools-row">
@@ -127,9 +145,33 @@
         </div>
       </section>
 
-      <!-- Sticky Backup Text Input Bar -->
+      <!-- Floating Live Voice Status Bar -->
+      <div id="voice-status-bar" class="voice-status-bar" role="status">
+        <div class="voice-status-info">
+          <div class="voice-wave-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span id="voice-status-text">Listening... speak now</span>
+        </div>
+        <button type="button" id="btn-status-stop" class="voice-status-stop-btn">
+          ⏹️ <span id="lbl-status-stop">Stop</span>
+        </button>
+      </div>
+
+      <!-- Sticky Input Bar WITH MIC AT LEFT BOTTOM -->
       <div class="chat-input-bar">
+        <!-- 🎙️ MICROPHONE BUTTON AT LEFT BOTTOM -->
+        <button type="button" id="btn-left-mic" class="left-bottom-mic-btn" aria-label="Microphone: Tap to speak in your language" title="Tap to talk">
+          <svg id="mic-icon-svg" viewBox="0 0 24 24">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+          </svg>
+        </button>
+
+        <!-- Text input field -->
         <input type="text" id="chat-text-input" class="text-input-field" placeholder="Type your question..." autocomplete="off">
+
+        <!-- Send message button -->
         <button type="button" id="btn-send-text" class="send-msg-btn" aria-label="Send question">
           <svg viewBox="0 0 24 24">
             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
@@ -238,7 +280,7 @@
           <!-- Official Portal Link -->
           <div class="sheet-section">
             <div class="sheet-section-title" id="lbl-sheet-portal">Official Portal</div>
-            <a href="#" id="sheet-official-url" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 15px; word-break: break-all;">
+            <a href="#" id="sheet-official-url" target="_blank" rel="noopener noreferrer" style="color: var(--green-primary); font-weight: 700; font-size: 15px; word-break: break-all;">
               Visit Official Website ↗
             </a>
           </div>
