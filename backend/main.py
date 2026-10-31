@@ -6,7 +6,8 @@ import logging
 from typing import List, Dict, Any, Optional
 from collections import Counter
 
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Request
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from groq import Groq
@@ -606,11 +607,34 @@ class AskTextRequest(BaseModel):
     lang: str = "auto"
     history: List[Dict[str, Any]] = []
 
+def find_frontend_dir() -> Optional[str]:
+    """Locates the frontend directory containing index.html."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    candidates = [
+        os.path.join(base_dir, "frontend"),
+        os.path.join(base_dir, "..", "frontend"),
+        os.path.join(os.getcwd(), "frontend"),
+        os.path.join(os.getcwd(), "backend", "frontend"),
+        "frontend",
+        "backend/frontend"
+    ]
+    for c in candidates:
+        if os.path.isdir(c) and os.path.exists(os.path.join(c, "index.html")):
+            return os.path.abspath(c)
+    return None
+
 @app.get("/")
-@app.get("/api")
-@app.get("/api/")
-@app.get("/api/index.py")
-def root():
+def root(request: Request):
+    accept = request.headers.get("accept", "")
+    format_arg = request.query_params.get("format", "")
+    
+    # If opened in a web browser, serve the frontend HTML application
+    frontend_dir = find_frontend_dir()
+    if frontend_dir and "application/json" not in accept and format_arg != "json":
+        index_file = os.path.join(frontend_dir, "index.html")
+        if os.path.exists(index_file):
+            return FileResponse(index_file, media_type="text/html")
+
     return {
         "status": "ok",
         "app": "Bolo API",
@@ -621,6 +645,75 @@ def root():
         "categories": "/categories",
         "docs": "/docs"
     }
+
+@app.get("/api")
+@app.get("/api/")
+@app.get("/api/index.py")
+def api_root():
+    return {
+        "status": "ok",
+        "app": "Bolo API",
+        "description": "Voice-first Government Schemes Assistant for Rural India",
+        "schemes_loaded": len(schemes_data),
+        "health": "/health",
+        "schemes": "/schemes",
+        "categories": "/categories",
+        "docs": "/docs"
+    }
+
+@app.get("/styles.css")
+def serve_styles():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "styles.css")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="text/css")
+    raise HTTPException(status_code=404, detail="styles.css not found")
+
+@app.get("/app.js")
+def serve_app_js():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "app.js")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="application/javascript")
+    raise HTTPException(status_code=404, detail="app.js not found")
+
+@app.get("/config.js")
+def serve_config_js():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "config.js")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="application/javascript")
+    raise HTTPException(status_code=404, detail="config.js not found")
+
+@app.get("/icon.svg")
+def serve_icon():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "icon.svg")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="image/svg+xml")
+    raise HTTPException(status_code=404, detail="icon.svg not found")
+
+@app.get("/manifest.json")
+def serve_manifest():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "manifest.json")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="application/manifest+json")
+    raise HTTPException(status_code=404, detail="manifest.json not found")
+
+@app.get("/sw.js")
+def serve_sw():
+    frontend_dir = find_frontend_dir()
+    if frontend_dir:
+        p = os.path.join(frontend_dir, "sw.js")
+        if os.path.exists(p):
+            return FileResponse(p, media_type="application/javascript")
+    raise HTTPException(status_code=404, detail="sw.js not found")
 
 @app.get("/health")
 @app.get("/api/health")
