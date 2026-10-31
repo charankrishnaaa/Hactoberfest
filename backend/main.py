@@ -574,7 +574,11 @@ def process_bolo_conversation(question: str, lang: str, history: List[Dict[str, 
         }
 
 # ==================== FASTAPI APP ====================
-app = FastAPI(title="Bolo API", description="Voice-first Government Schemes Assistant for Rural India")
+app = FastAPI(
+    title="Bolo API",
+    description="Voice-first Government Schemes Assistant for Rural India",
+    redirect_slashes=False
+)
 
 # Enable CORS for all origins
 app.add_middleware(
@@ -585,12 +589,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Vercel Path Normalization Middleware
+@app.middleware("http")
+async def vercel_path_rewrite_middleware(request, call_next):
+    """Normalizes path if Vercel serverless proxy or rewrites prepend /api/index.py or /main.py."""
+    path = request.scope.get("path", "")
+    for prefix in ("/api/index.py", "/api/index", "/main.py"):
+        if path.startswith(prefix):
+            sub = path[len(prefix):]
+            request.scope["path"] = sub if sub else "/"
+            break
+    return await call_next(request)
+
 class AskTextRequest(BaseModel):
     question: str
     lang: str = "auto"
     history: List[Dict[str, Any]] = []
 
 @app.get("/")
+@app.get("/api")
+@app.get("/api/")
+@app.get("/api/index.py")
 def root():
     return {
         "status": "ok",
@@ -604,6 +623,7 @@ def root():
     }
 
 @app.get("/health")
+@app.get("/api/health")
 def health():
     return {
         "status": "ok",
@@ -611,6 +631,7 @@ def health():
     }
 
 @app.get("/schemes")
+@app.get("/api/schemes")
 def list_schemes(category: Optional[str] = None, q: Optional[str] = None):
     results = []
     
@@ -639,6 +660,7 @@ def list_schemes(category: Optional[str] = None, q: Optional[str] = None):
     return results
 
 @app.get("/schemes/{scheme_id}")
+@app.get("/api/schemes/{scheme_id}")
 def get_scheme(scheme_id: str):
     s = schemes_by_id.get(scheme_id)
     if not s:
@@ -660,10 +682,12 @@ def get_scheme(scheme_id: str):
     }
 
 @app.get("/categories")
+@app.get("/api/categories")
 def list_categories():
     return [{"name": cat, "count": category_counts.get(cat, 0)} for cat in CATEGORIES_LIST]
 
 @app.post("/ask-text")
+@app.post("/api/ask-text")
 def ask_text(req: AskTextRequest):
     try:
         raw_lang = req.lang.lower().strip()
@@ -688,6 +712,7 @@ def ask_text(req: AskTextRequest):
         }
 
 @app.post("/ask-voice")
+@app.post("/api/ask-voice")
 async def ask_voice(
     audio: UploadFile = File(...),
     lang: str = Form("auto"),

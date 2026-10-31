@@ -4,8 +4,12 @@
 (function () {
   "use strict";
 
-  // ==================== CONFIGURATION & STATE ====================
-  const API_BASE = (window.BOLO_API || "http://127.0.0.1:8000").replace(/\/+$/, "");
+  // API Base URL resolution: respects custom BOLO_API, defaults to relative path in production, or localhost in development
+  const API_BASE = (typeof window.BOLO_API === "string" && window.BOLO_API.trim() !== "")
+    ? window.BOLO_API.trim().replace(/\/+$/, "")
+    : (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+      ? "http://127.0.0.1:8000"
+      : "";
   const HELPLINE_NUMBER = "1800-XXX-XXXX"; // Fallback helpline
 
   let currentLang = "auto";       // 'auto' | 'te' | 'hi' | 'en'
